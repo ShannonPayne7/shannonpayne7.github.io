@@ -32,7 +32,6 @@ main {
 img {
     width: 200px;
     float: right;
-    /*box-shadow: 2px 2px 2px 2px #888888;*/
     box-shadow: 2px 2px 2px 2px #282828;
     border-radius: 10px;
     margin-right: 60px;
@@ -50,6 +49,10 @@ footer {
 
 footer {
     padding: 10px;
+}
+
+#byui-link {
+    color: #ffffff;
 }
 
 #dateModified {
