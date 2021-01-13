@@ -1,0 +1,32 @@
+/*CSS for medium size page*/
+
+@media only screen and (min-width: 32.5em) {
+  section {
+    border-radius: 10px;
+    border: 2px solid #c4b18f;
+  }
+
+  h3 {
+    border-radius: 8px 8px 0 0;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5em 0;
+    gap: 20px;
+  }
+
+  header,
+  footer {
+    border-radius: 10px;
+  }
+
+  #cafe-rio,
+  #home-depot {
+    margin-top: 0;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
