@@ -1,0 +1,22 @@
+/*css for larger screen*/
+
+@media only screen and (min-width: 32.5em) {
+    nav ul { 
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }  
+    
+    nav ul a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+       
+    }
