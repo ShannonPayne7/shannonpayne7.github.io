@@ -77,8 +77,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.rem;
+  font-size: 1.5em;
   padding-left: 20px;
+}
+
+h3 {
+  padding-left: 40px;
 }
 
 p {
