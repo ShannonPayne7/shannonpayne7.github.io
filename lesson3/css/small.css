@@ -1,7 +1,5 @@
 /*css for small screen*/
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
-
 /*font-family: 'Noto Sans JP', Arial, sans-serif;
 font-family: 'Roboto', Arial, sans-serif;*/
 
@@ -10,38 +8,30 @@ font-family: 'Roboto', Arial, sans-serif;*/
   margin: 0 auto;
   background-color: white;
 }
-
 body {
   font-family: "Roboto", Arial, sans-serif;
   background-color: azure;
 }
-
 .heading-font {
   font-family: "Noto Sans JP", Arial, sans-serif;
 }
-
 .body-font {
   font-family: "Roboto", Arial, sans-serif;
 }
-
 header {
   padding: 2px;
 }
-
 header h2 {
   margin-top: -15px;
 }
-
 nav {
     background-color: #BEBEBE;
     text-align: center;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul a {
     display: block;
     text-decoration: none;
@@ -51,65 +41,52 @@ nav ul a {
     padding-top: .3em;
     padding-bottom: .3em;
 }
-
 nav a:hover {
     background-color: #808080;
 }
-
 main {
   padding: 2em;
 }
-
 header,
 footer {
   align-items: center;
   text-align: center;
 }
-
 main h1 {
   margin-top: -15px;
 }
-
 h1 {
   font-size: 2.3em;
   font-family: 'Noto Sans JP', Arial, sans-serif;
 }
-
 h2 {
   font-size: 1.5em;
   padding-left: 20px;
 }
-
 h3 {
   padding-left: 40px;
 }
-
 p {
   line-height: 1.5;
   padding-left: 40px;
   font-size: 1em;
   font-weight: 500;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
 #logo {
   padding-left: 40px;
   margin-top: -30px;
   margin-bottom: -30px;
 }
-
 #color-palette {
   padding-left: 40px;
 }
-
 .scenario-list li {
   line-height: 1.5;
 }
-
 footer p {
   font-weight: bold;
 }
