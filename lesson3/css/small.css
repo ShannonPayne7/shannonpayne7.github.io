@@ -1,11 +1,9 @@
 /*css for small screen*/
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /*font-family: 'Noto Sans JP', Arial, sans-serif;
-font-family: 'Roboto', Arial, sans-serif;
-font-family: "Montserrat", Arial, sans-serif;*/
+font-family: 'Roboto', Arial, sans-serif;*/
 
 #content {
   max-width: 980px;
