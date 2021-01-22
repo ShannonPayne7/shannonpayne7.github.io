@@ -14,7 +14,7 @@ font-family: "Montserrat", Arial, sans-serif;*/
 }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   background-color: azure;
 }
 
@@ -74,6 +74,7 @@ main h1 {
 
 h1 {
   font-size: 2.3em;
+  font-family: 'Noto Sans JP', Arial, sans-serif;
 }
 
 h2 {
