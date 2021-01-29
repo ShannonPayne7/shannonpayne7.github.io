@@ -17,11 +17,8 @@
   }
 
   .title p {
-    color: #004aad;
     font-size: 22px;
-    font-weight: 600;
-    margin-top: -24px;
-    text-align: center;
+    margin-top: -26px;
   }
 
   .title {
@@ -31,5 +28,9 @@
   nav ul a {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  main h2 {
+    font-size: 30px;
   }
 }

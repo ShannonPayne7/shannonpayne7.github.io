@@ -8,8 +8,7 @@ let month = months[ updateDate.getMonth() ];
 let dayOfMonth = updateDate.getDate();
 let year = updateDate.getUTCFullYear();
 
-document.getElementById("dateModified").innerHTML =
-  "Last updated " + weekDay + ", " + month + " " + dayOfMonth + " " + year;
+document.getElementById("dateModified").innerHTML = weekDay + ", " + month + " " + dayOfMonth + " " + year;
 
 //copyright current year
 let myDate = new Date();

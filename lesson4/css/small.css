@@ -9,6 +9,7 @@ dark blue: #003A79*/
 .title h1 {
   font-family: "Noto Sans JP", Arial, sans-serif;
   color: #fe8d0b;
+  font-size: 30px;
 }
 
 .title p {
@@ -17,7 +18,7 @@ dark blue: #003A79*/
   font-size: 20px;
   font-weight: 600;
   margin-top: -18px;
-  text-align: center;
+  text-align: left;
 }
 
 .title {
@@ -53,10 +54,6 @@ nav button {
   outline: none;
 }
 
-/*nav button:active {
-    border: none;
-}*/
-
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -78,10 +75,13 @@ nav a:hover {
   background-color: #003a79;
 }
 
-/* nav ul li.active a { 
-    background-color: white;
-    color: #fff;
-}*/
+nav a:active { 
+  color: #FE8D0B;
+}
+
+.hide .current {
+  color: #FE8D0B;
+}
 
 nav ul.hide {
   display: none;
@@ -89,7 +89,7 @@ nav ul.hide {
 
 main div {
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   background-color: #d3d3d3;
   padding: 15px 0 15px 20px;
@@ -99,14 +99,14 @@ main div {
 main h2 {
   text-align: center;
   font-family: "Noto Sans JP", Arial, sans-serif;
-  font-size: 1.7em;
+  font-size: 25px;
 }
 
 .date-info {
   padding: 1px 0 5px;
   margin-top: 10px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #byui-link {
