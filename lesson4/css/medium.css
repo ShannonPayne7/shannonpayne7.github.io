@@ -1,0 +1,21 @@
+/*css for medium screen*/
+@media only screen and (min-width: 33em) {
+  #menuButton {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav ul a {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

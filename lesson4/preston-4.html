@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preston Home Page|Lesson 4</title>
+    <meta
+      name="description"
+      content="Preston Home Page for Weather Site: Lesson 4 WDD230"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <div class="logo">
+          <img src="images/LogoResized.png" alt="weather site logo" />
+        </div>
+        <section class="title">
+          <h1>Weather Watch Idaho</h1>
+          <p>Keeping our eyes on the skies</p>
+        </section>
+      </header>
+      <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-4.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Preston, Idaho</h2>
+        <div>Hero Image/Weather Summary</div>
+        <!--<img src="http://placekitten.com/200/300" id="preston-hero" alt="kitten">
+          <div class=weather-summary></div>-->
+        <div>5 Day Forecast</div>
+        <div>Article</div>
+        <!--<h3>Article</h3>
+          <img src="http://placekitten.com/200/300" alt="article image">-->
+        <div>Contact Information</div>
+        <!--<p>email</p>
+            <p>phone</p>
+          <div class="map">
+            <img src="http://placekitten.com/200/300" alt="map of Preston">
+          </div>-->
+      </main>
+
+      <footer>
+        <div class="date-info">
+          <p id="year">
+            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+            <a href="https://www.byui.edu/online" target="_blank" id="byui-link"
+              >BYUI Online Learning</a>
+          </p>
+          <div id="dateModified"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/date.js"></script>
+  </body>
+</html>

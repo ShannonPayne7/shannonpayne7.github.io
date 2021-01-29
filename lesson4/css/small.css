@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
+
+/*light blue: #00B3E7 ;
+contrast orange: #FE8D0B rgb(254, 141, 11)
+orange lighter shade: #fea034
+cobalt blue: #004AAD rgb(0, 74, 173)
+dark blue: #003A79*/
+
+.title h1 {
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  color: #fe8d0b;
+}
+
+.title p {
+  color: #004aad;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -18px;
+  text-align: center;
+}
+
+.title {
+  margin-top: -13px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 179, 231, 0.2);
+}
+
+header img {
+  max-width: 100px;
+  padding-right: 20px;
+}
+
+nav,
+footer {
+  background-color: rgba(0, 74, 173, 0.8);
+  text-align: center;
+  font-family: "Noto Sans JP", Arial, sans-serif;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  outline: none;
+}
+
+/*nav button:active {
+    border: none;
+}*/
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  background-color: #003a79;
+}
+
+/* nav ul li.active a { 
+    background-color: white;
+    color: #fff;
+}*/
+
+nav ul.hide {
+  display: none;
+}
+
+main div {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #d3d3d3;
+  padding: 15px 0 15px 20px;
+  margin-top: 10px;
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  font-size: 1.7em;
+}
+
+.date-info {
+  padding: 1px 0 5px;
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+#byui-link {
+  color: white;
+}
+
+#dateModified {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

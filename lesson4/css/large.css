@@ -1,0 +1,35 @@
+/*CSS for large page*/
+
+@media only screen and (min-width: 48em) {
+  main,
+  footer {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  header img {
+    max-width: 130px;
+    padding-right: 20px;
+  }
+
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .title p {
+    color: #004aad;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -24px;
+    text-align: center;
+  }
+
+  .title {
+    margin-top: -13px;
+  }
+
+  nav ul a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
