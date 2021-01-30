@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"); */
-
 /*light blue: #00B3E7 ;
 contrast orange: #FE8D0B rgb(254, 141, 11)
 orange lighter shade: #fea034
@@ -11,7 +9,6 @@ dark blue: #003A79*/
   color: #fe8d0b;
   font-size: 30px;
 }
-
 .title p {
   color: #004aad;
   font-family: "Roboto", Arial, sans-serif;
@@ -20,30 +17,25 @@ dark blue: #003A79*/
   margin-top: -18px;
   text-align: left;
 }
-
 .title {
   margin-top: -13px;
 }
-
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 179, 231, 0.2);
 }
-
 header img {
   max-width: 100px;
   padding-right: 20px;
 }
-
 nav,
 footer {
   background-color: rgba(0, 74, 173, 0.8);
   text-align: center;
   font-family: "Noto Sans JP", Arial, sans-serif;
 }
-
 nav button {
   background-color: transparent;
   border: none;
@@ -53,14 +45,12 @@ nav button {
   margin-bottom: 6px;
   outline: none;
 }
-
 nav ul {
   list-style-type: none;
   padding: 0;
   margin-top: 3px;
   margin-bottom: 0;
 }
-
 nav ul a {
   display: block;
   text-decoration: none;
@@ -70,23 +60,18 @@ nav ul a {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 nav a:hover {
   background-color: #003a79;
 }
-
 nav a:active { 
   color: #FE8D0B;
 }
-
 .hide .current {
   color: #FE8D0B;
 }
-
 nav ul.hide {
   display: none;
 }
-
 main div {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 20px;
@@ -95,29 +80,24 @@ main div {
   padding: 15px 0 15px 20px;
   margin-top: 10px;
 }
-
 main h2 {
   text-align: center;
   font-family: "Noto Sans JP", Arial, sans-serif;
   font-size: 25px;
 }
-
 .date-info {
   padding: 1px 0 5px;
   margin-top: 10px;
   color: white;
   font-size: 16px;
 }
-
 #byui-link {
   color: white;
 }
-
 #dateModified {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

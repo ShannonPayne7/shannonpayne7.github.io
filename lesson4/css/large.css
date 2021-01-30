@@ -6,30 +6,24 @@
     max-width: 980px;
     margin: 0 auto;
   }
-
   header img {
     max-width: 100%;
     padding-right: 20px;
   }
-
   .title h1 {
     font-size: 40px;
   }
-
   .title p {
     font-size: 22px;
     margin-top: -26px;
   }
-
   .title {
     margin-top: -13px;
   }
-
   nav ul a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   main h2 {
     font-size: 30px;
   }
