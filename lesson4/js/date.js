@@ -18,4 +18,10 @@ document.getElementById("demo").innerHTML = currentYear;
 //toggle menu button
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
+
+  if (document.getElementById("primaryNav").className == "hide") {
+    document.getElementById("menuButton").innerHTML = "&#9776;";
+  } else {
+    document.getElementById("menuButton").innerHTML = "&#10006;";
+  }
 }
