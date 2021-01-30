@@ -11,7 +11,7 @@ body {
   background-color: azure;
 }
 .heading-font {
-  font-family: "Noto Sans JP", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 .body-font {
   font-family: "Roboto", Arial, sans-serif;
@@ -55,7 +55,7 @@ main h1 {
 }
 h1 {
   font-size: 2.3em;
-  font-family: 'Noto Sans JP', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 h2 {
   font-size: 1.5em;
