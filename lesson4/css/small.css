@@ -2,10 +2,12 @@
 contrast orange: #FE8D0B rgb(254, 141, 11)
 orange lighter shade: #fea034
 cobalt blue: #004AAD rgb(0, 74, 173)
-dark blue: #003A79*/
+dark blue: #003A79
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 
 .title h1 {
-  font-family: "Noto Sans JP", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #fe8d0b;
   font-size: 30px;
 }
@@ -34,7 +36,7 @@ nav,
 footer {
   background-color: rgba(0, 74, 173, 0.8);
   text-align: center;
-  font-family: "Noto Sans JP", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 nav button {
   background-color: transparent;
@@ -82,7 +84,7 @@ main div {
 }
 main h2 {
   text-align: center;
-  font-family: "Noto Sans JP", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 25px;
 }
 .date-info {
