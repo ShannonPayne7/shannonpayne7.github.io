@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Watch Idaho Preston Home Page</title>
+    <meta
+      name="description"
+      content="Preston Home Page for Weather Watch Idaho detailing local weather and events"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="announcement" class="hideannouncement">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+      </div>
+      <header>
+        <img src="images/LogoResized.png" alt="site logo">
+        <section class="title">
+          <h1>Weather Watch Idaho</h1>
+          <p>Keeping our eyes on the skies</p>
+        </section>
+      </header>
+      <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="https://shannonpayne7.github.io/">Home</a></li>
+          <li><a class="current" href="preston-4.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Preston, Idaho</h2>
+        <div class="heroSummary">
+          <img
+            src="images/hero-pexels-leah-kelley-crop.jpg"
+            class="hero-pic"
+            alt="friends at music festival"
+          />
+          <div class="weathersummary">
+            <div class="weatherSummaryTitle">Weather Summary</div>
+            <div class="weathercategories">
+              <p>Currently:</p>
+              <p>High:</p>
+              <p>Wind Chill:</p>
+              <p>Humidity:</p>
+              <p>Wind Speed:</p>
+            </div>
+            <div class="weatherNumbers">
+              <p>Sunny</p>
+              <p>75&#8457;</p>
+              <p>73&#8457;</p>
+              <p>6 %</p>
+              <p>4 mph</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <table class="fiveday">
+            <tr class="daysOfWeek">
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thur</th>
+              <th>Fri</th>
+            </tr>
+            <tr class="dailyIcons">
+              <td><img src="images/partlyCloudyIcon.png" alt="partly cloudy icon"></td>
+              <td><img src="images/rainyIcon.png" alt="rain icon"></td>
+              <td><img src="images/partlyCloudyIcon.png" alt="partly cloudy icon"></td>
+              <td><img src="images/sunnyIcon.png" alt="sun icon"></td>
+              <td><img src="images/sunnyIcon.png" alt="sun icon"></td>
+            </tr>
+            <tr class="dailyHigh">
+              <td>62&#8457;</td>
+              <td>57&#8457;</td>
+              <td>60&#8457;</td>
+              <td>64&#8457;</td>
+              <td>67&#8457;</td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="eventarticle">
+          <img src="images/pexels-market-resize.jpg" class="articleimage" alt="outdoor market"/>
+          <article class="communityevent">
+            <h3>Community Event</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              odio distinctio modi illo quas culpa cupiditate officia esse odit
+              voluptatum, earum ullam quia praesentium reprehenderit totam
+              repellat maxime magnam expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              odio distinctio modi illo quas culpa cupiditate officia esse odit
+              voluptatum, earum ullam quia praesentium reprehenderit totam
+              repellat maxime magnam expedita.
+            </p>
+          </article>
+          </div>
+      </main>
+
+      <footer>
+        <div class="contactinfo">
+          <img
+            src="images/PrestonMapResize.png" class="prestonMap"
+            alt="map of Preston"
+          />
+          <section class="addresses">
+            <h4>Weather Watch Idaho</h4>
+            <p>300 N State St. Preston, ID 83263</p>
+          <br>
+            <p>208-555-1234</p>
+            <p>weatherwatch@sky.com</p>
+            <div class="socialMedia">
+              <img src="images/facebook64.png" alt="facebook icon">
+              <img src="images/instagram64.png" alt= "instagram icon">
+              <img src="images/twitter64.png" alt="twitter icon">
+              <img src="images/pinterest64.png" alt="pinterest icon">
+            </div>
+          </section>
+          
+        </div>
+        <div class="date-info">
+          <p id="year">
+            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+            <a href="https://www.byui.edu/online" target="_blank" id="byui-link"
+              >BYUI Online Learning</a
+            >
+          </p>
+          <div id="dateModified"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/date.js"></script>
+  </body>
+</html>
