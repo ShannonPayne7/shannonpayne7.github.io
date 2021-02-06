@@ -31,6 +31,17 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .weathersummary {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(255, 255, 240, 0.8);
+    border: 1px solid #404040;
+  }
+  .weatherSummaryTitle {
+    border-bottom: 2px solid #FE8D0B;
+    font-size: 20px;
+  }
   main h2 {
     font-size: 28px;
   }
