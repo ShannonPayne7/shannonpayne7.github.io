@@ -12,6 +12,17 @@ main,
     margin: 0 auto;
   }
 
+main div.heroSummary{
+  display: block;
+  /* width: 100%; */
+  height: auto;
+  max-width: 1100px;
+}
+.mountainphoto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 header, main, footer, table{ 
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -100,9 +111,7 @@ main h2 {
 .heroSummary {
   position: relative;
 }
-.mountainphoto {
-  max-width: 100%;
-}
+
 /*.hero-pic {
   max-width: 100%;
   height: auto;
@@ -201,6 +210,7 @@ main h2 {
   padding-left: 10px;
   font-size: 14px;
   margin-top: -20px;
+  contain: content;
 }
 .addresses p {
   margin-top: -8px;
