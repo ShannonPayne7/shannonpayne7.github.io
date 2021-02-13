@@ -59,6 +59,9 @@
     margin: 10px 0;
     justify-self: center;
   }
+  .addresses {
+    font-size: .9rem;
+  }
   .date-info {
     font-size: 18px;
   }
