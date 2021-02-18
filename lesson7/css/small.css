@@ -1,0 +1,244 @@
+/*light blue: #00B3E7 ;
+contrast orange: #FE8D0B rgb(254, 141, 11)
+orange lighter shade: #fea034
+cobalt blue: #004AAD rgb(0, 74, 173)
+dark blue: #003A79
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', Arial, sans-serif;*/
+
+main, footer {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+main .heroSummary{
+  display: block;
+  /* width: 100%; */
+  height: auto;
+  max-width: 1100px;
+}
+.mountainphoto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header, main, footer, table{ 
+  font-family: "Roboto", Arial, sans-serif;
+}
+.hideannouncement {
+  display: none;
+}
+.showAnnouncement {
+  background-color: #003A79;
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 1px;
+  text-align: center;
+}
+.title h1 {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fe8d0b;
+  font-size: 30px;
+}
+.title p {
+  color: #004aad;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -18px;
+  text-align: left;
+}
+.title {
+  margin-top: -13px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 179, 231, 0.2);
+}
+header img {
+  max-width: 100px;
+  padding-right: 20px;
+}
+nav, .date-info {
+  background-color: rgba(0, 74, 173, 0.8);
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  outline: none;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav a:hover {
+  background-color: #003a79;
+}
+nav a:active { 
+  color: #FE8D0B;
+}
+.hide, .current {
+  color: #fea034;
+}
+nav ul.hide {
+  display: none;
+}
+main h2 {
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.heroSummary {
+  position: relative;
+}
+
+/*.hero-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}*/
+.weathersummary {
+  position: static;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  display: grid;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, 1fr); 
+  background-color: #E8E8E8;
+}
+.weatherSummaryTitle {
+  margin: 5px 15px 0;
+  padding-bottom: 4px;
+  font-weight: 600;
+  grid-column: 1/3;
+  text-align: center;
+  color: #003A79;
+  font-size: 22px;
+  font-weight: 800;
+}
+.weathersummary p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.weathercategories {  
+  text-align: right;
+}
+.weatherNumbers {
+  padding-right: 0;
+  color: #003A79;
+}
+.weathercategories, .weatherNumbers {
+  margin-top: 3px;
+}
+.fiveday {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+.fiveday th, td {
+  border: 1px solid #404040;
+  padding: 5px;
+}
+.daysOfWeek {
+  background-color: rgba(0, 74, 173, 0.8);
+  color: white;
+  font-size: 1.1rem;
+}
+.dailyHigh {
+  text-align: center;
+}
+.eventarticle {
+  background-color: #E8E8E8;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+.articleimage {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 5px;
+}
+.communityevent h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.communityevent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+.communityevent {
+  padding: 20px 40px;
+  margin-top: -10px;
+}
+.contactinfo {
+  background-color: rgba(0, 74, 173, 0.4);
+  margin-bottom: -10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.addresses {
+  padding-left: 10px;
+  font-size: .9rem;
+  margin-top: -20px;
+}
+.addresses p {
+  margin-top: -8px;
+}
+.addresses h4 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.socialMedia img {
+  max-width: 25px;
+  margin-right: 7px;
+  margin-top: 10px;
+}
+.date-info {
+  padding: 1px 0 5px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+#byui-link {
+  color: white;
+}
+#dateModified {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

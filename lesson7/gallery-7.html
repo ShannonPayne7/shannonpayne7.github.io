@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Watch Idaho Preston Home Page</title>
+    <meta
+      name="description"
+      content="Preston Home Page for Weather Watch Idaho detailing local weather and events"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <!--<link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />-->
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="announcement" class="hideannouncement">
+        <p>
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </p>
+      </div>
+      <header>
+        <img src="images/LogoResized.png" alt="site logo" />
+        <section class="title">
+          <h1>Weather Watch Idaho</h1>
+          <p>Our eyes are on the skies</p>
+        </section>
+      </header>
+      <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="https://shannonpayne7.github.io/">Home</a></li>
+          <li><a href="lesson6/preston-6.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a class="current" href="gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1>Weather Gallery</h1>
+        <div class="pictureGallery">
+            <figure>
+                <img src="images/cloudysunset_300_200.jpg" alt="sunset over hill">
+                <figcaption>Storm at Sunset</figcaption>
+              </figure>
+              <figure>
+                <img src="images/foggylake300_200.jpg" alt="fog on the lake">
+                <figcaption>Winter Day at the Lake</figcaption>
+              </figure>
+              <figure>
+                <img src="images/muddyroad_300_200.jpg" alt="muddy dirt road">
+                <figcaption>The passing of the Storm</figcaption>
+              </figure>
+              <figure>
+                <img src="images/rain_swings_300_200.jpg" alt="playing in rain">
+                <figcaption>Swinging in the Rain</figcaption>
+              </figure>
+              <figure>
+                <img src="images/rainbow300_200.jpg" alt="rainbow">
+                <figcaption>Somewhere Over the Rainbow</figcaption>
+              </figure>
+              <figure>
+                <img src="images/snowyfence_300_200.jpg" alt="snowy road">
+                <figcaption>Blanketed in Snow</figcaption>
+              </figure>
+              <figure>
+                <img src="images/snowytrees_300_200.jpg" alt="snow on trees">
+                <figcaption>Winter Day on the Lake</figcaption>
+              </figure>
+              <figure>
+                <img src="images/sun_snow_300_200.jpg" alt="sun shining on snow">
+                <figcaption>The Sun Still Shines in Winter</figcaption>
+              </figure>
+              <figure>
+                <img src="images/sunset_300_200.jpg" alt="sunset">
+                <figcaption>Summer Sunrise</figcaption>
+              </figure>
+
+        </div>
+
+        </main>
+      <footer>
+        <!--<div class="contactinfo">
+          <img
+            src="images/PrestonMapResize.png"
+            class="prestonMap"
+            alt="map of Preston"
+          />
+          <section class="addresses">
+            <h4>Weather Watch Idaho</h4>
+            <p>300 N State St. Preston, ID 83263</p>
+            <br />
+            <p>208-555-1234</p>
+            <p>weatherwatch@sky.com</p>
+            <div class="socialMedia">
+              <img src="images/facebook64.png" alt="facebook icon" />
+              <img src="images/instagram64.png" alt="instagram icon" />
+              <img src="images/twitter64.png" alt="twitter icon" />
+              <img src="images/pinterest64.png" alt="pinterest icon" />
+            </div>
+          </section>
+        </div>-->
+        <div class="date-info">
+          <p id="year">
+            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+            <a href="https://www.byui.edu/online" target="_blank" id="byui-link"
+              >BYUI Online Learning</a
+            >
+          </p>
+          <div id="dateModified"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/lazyload.js"></script>
+  </body>
+</html>
