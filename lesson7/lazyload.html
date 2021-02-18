@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lazy Load Images</title>
+    <meta name="description" content="examples of lazy load in images" />
+    <link rel="stylesheet" href="css/lazyload.css"/>
+    <!--<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small_main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Manrope:wght@600&display=swap"
+      rel="stylesheet"
+    />-->
+  </head>
+
+  <body>
+    <main>
+      <h1>Progressive Loading Images</h1>
+      <div class="galleryPictures">
+       <!-- <picture>
+          <img src="data/img/placeholder.png" data-src='data/img/Italy1resize300.jpg" alt='NAME'>
+        </picture>-->
+        
+        <picture>
+          <img src="images/Placeholder300.png" data-src="images/Italy1resize300.jpg" alt="Rome Colosseum picture" />
+        </picture>
+        <picture>
+          <img src="images/Placeholder300.png" data-src="images/Italy2resize300.jpg" alt="Roman Forum picture" />
+        </picture>
+        <picture>
+          <img src="images/Placeholder300.png" data-src="images/Italy3resize300.jpg" alt="Roman Forum picture" />
+        </picture>
+        <picture>
+          <img src="images/Placeholder300.png" data-src="images/Italy4resize300.jpg" alt="Pantheon picture" />
+        </picture>
+        <picture>
+          <img src="images/Placeholder300.png" data-src="images/Italy5resize300.jpg" alt="Pompeii picture" />
+        </picture>
+      </div>
+    </main>
+
+    <script src="js/lazyload.js"></script>
+ 
+  </body>
+</html>
