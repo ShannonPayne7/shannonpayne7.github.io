@@ -197,6 +197,20 @@ main h2 {
   padding: 20px 40px;
   margin-top: -10px;
 }
+.pictureGallery {
+  text-align: center;
+}
+.pictureGallery img[data-src] {
+  filter: blur(0.2em);
+}
+.pictureGallery img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+.pictureGallery figure {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .contactinfo {
   background-color: rgba(0, 74, 173, 0.4);
   margin-bottom: -10px;
