@@ -55,6 +55,15 @@
     float: right;
     margin-right: 25px;
   }
+  .pictureGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+  }
+  .pictureGallery img {
+    max-width: 100%;
+    height: auto;
+  }
   .prestonMap {
     margin: 10px 0;
     justify-self: center;

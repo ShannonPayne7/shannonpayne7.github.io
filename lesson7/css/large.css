@@ -26,4 +26,13 @@
   main h2 {
     font-size: 30px;
   }
+  .pictureGallery {
+    max-width: 65em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+  }
+  .pictureGallery img:hover {
+    box-shadow: 0 0 10px 5px #B0B0B0;
+  }
 }
