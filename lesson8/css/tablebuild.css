@@ -1,0 +1,47 @@
+/*#e7f0ed 1st row 
+#e7ffed 2nd row
+#628ca6 column headings
+#7fb9c2 head and foot*/
+
+main div {
+    padding-top: 40px;
+}
+
+table, th, td {
+    border: 1px solid #c0d8d0;
+    border-collapse: collapse;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 5px 5px 12px #628ca6;
+    padding-top: 30px;
+}
+
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #e7ffed ;
+}
+
+.cellhighlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+td, th {
+    padding: .5rem;
+}
