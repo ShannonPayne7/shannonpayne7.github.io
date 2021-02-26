@@ -55,6 +55,9 @@
     font-size: 1.2rem;
     max-width: 30rem;
   }
+  form label.top textarea {
+    width: 35rem;
+  }
   .thankyou {
     padding: 4.5rem;
   }

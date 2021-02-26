@@ -240,7 +240,6 @@ form label.top, form div {
 }
 form label.top textarea {
   border: solid 1px #003A79;
-  width: 35rem;
 }
 form label.top input, form label.top select {
   -webkit-appearance: none;
