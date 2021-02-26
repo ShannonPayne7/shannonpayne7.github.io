@@ -1,0 +1,80 @@
+/*medium screen */
+@media only screen and (min-width: 33em) {
+  .title h1 {
+    font-size: 35px;
+  }
+  .title p {
+    font-size: 20px;
+    margin-top: -21px;
+  }
+  header img {
+    max-width: 115px;
+    padding-right: 20px;
+  }
+  #menuButton {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    white-space: nowrap;
+  }
+  nav ul a {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .weathersummary {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(255, 255, 240, 0.8);
+    border: 1px solid #404040;
+  }
+  .weatherSummaryTitle {
+    border-bottom: 2px solid #FE8D0B;
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 28px;
+  }
+  .fiveday {
+    margin-bottom: 15px;
+  }
+  .eventarticle {
+    padding-bottom: 30px;
+  }
+  .articleimage {
+    float: right;
+    margin-right: 25px;
+  }
+  .pictureGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+  }
+  .pictureGallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  .report {
+    margin-top: -1.5rem;
+  }
+  .prestonMap {
+    margin: 10px 0;
+    justify-self: center;
+  }
+  .addresses {
+    font-size: .9rem;
+  }
+  .date-info {
+    font-size: 18px;
+  }
+}
