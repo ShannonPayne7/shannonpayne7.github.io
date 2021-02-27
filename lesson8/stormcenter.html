@@ -48,111 +48,116 @@
 
       <main>
         <div class="report">
-        <h2>Storm Center - Report a Storm</h2>
-        <form method="get" action="thanks.html">
-          <fieldset>
-            <legend>Storm Reporter's Information (*Required)</legend>
-            <label class="top"
-              >Full Name* <i>(Minimum of 5 characters a-z, upper or lower
-              case)</i><input
-                type="text"
-                name="name"
-                required
-                pattern="[a-zA-Z\s]{5,}"
-                title="Minimum 5 characters a-z, upper or lower case"
-            /></label>
-            <label class="top"
-              >Email<input
-                type="email"
-                name="email"
-                placeholder="user@gmail.com"
-            /></label>
-            <label class="top"
-              >Phone*<input
-                type="tel"
-                name="phone"
-                placeholder="1235551234"
-                required
-            /></label>
-            <label class="top"
-              >Zip Code*<input type="number" name="zipcode" required
-            /></label>
-          </fieldset>
-          <fieldset>
-            <legend>Storm Details</legend>
-            <label class="top"
-              >Date <input type="date" name="stormdate"
-            /></label>
-            <label class="top"
-              >Type of Storm
-              <input list="stormtype" name="stormtype" />
-              <datalist id="stormtype">
-                <option value="flood"></option>
-                <option value="hail"></option>
-                <option value="hurricane"></option>
-                <option value="thunderstorm"></option>
-                <option value="tornado"></option>
-              </datalist>
-            </label>
-            <div class="slider">
-            <label class="flexly" for="rating"
-              >Storm Severity
-              <input
-                type="range"
-                id="rating"
-                value="5"
-                min="1"
-                max="10"
-                step="1"
-                list="tickmarks"
-                oninput="adjustRating(this.value)"
-                onchange="adjustRating(this.value)"
-              />
-              <span id="ratingvalue">5</span>
-            </label>
-            <datalist id="tickmarks">
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-              <option value="6"></option>
-              <option value="7"></option>
-              <option value="8"></option>
-              <option value="9"></option>
-              <option value="10"></option>
-            </datalist>
-            </div>
-            <label class="top"
-              >Storm Region
-              <select name="stormregion">
-                <option>Please Select</option>
-                <option value="preston">Preston</option>
-                <option value="sodasprings">Soda Springs</option>
-                <option value="fishhaven">Fish Haven</option>
-              </select>
-            </label>
+          <h2>Storm Center - Report a Storm</h2>
+          <form method="get" action="thanks.html">
+            <fieldset>
+              <legend>Storm Reporter's Information (*Required)</legend>
+              <label class="top"
+                >Full Name*
+                <i>(Minimum of 5 characters a-z, upper or lower case)</i
+                ><input
+                  type="text"
+                  name="name"
+                  required
+                  pattern="[a-zA-Z\s]{5,}"
+                  title="Minimum 5 characters a-z, upper or lower case"
+              /></label>
+              <label class="top"
+                >Email<input
+                  type="email"
+                  name="email"
+                  placeholder="user@gmail.com"
+              /></label>
+              <label class="top"
+                >Phone*<input
+                  type="tel"
+                  name="phone"
+                  placeholder="1235551234"
+                  required
+              /></label>
+              <label class="top"
+                >Zip Code*<input type="number" name="zipcode" required
+              /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Storm Details</legend>
+              <label class="top"
+                >Date <input type="date" name="stormdate"
+              /></label>
+              <label class="top"
+                >Type of Storm
+                <input list="stormtype" name="stormtype" />
+                <datalist id="stormtype">
+                  <option value="flood"></option>
+                  <option value="hail"></option>
+                  <option value="hurricane"></option>
+                  <option value="thunderstorm"></option>
+                  <option value="tornado"></option>
+                </datalist>
+              </label>
+              <div class="slider">
+                <label class="flexly" for="rating"
+                  >Storm Severity
+                  <input
+                    type="range"
+                    id="rating"
+                    value="5"
+                    min="1"
+                    max="10"
+                    step="1"
+                    list="tickmarks"
+                    oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)"
+                  />
+                  <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                  <option value="6"></option>
+                  <option value="7"></option>
+                  <option value="8"></option>
+                  <option value="9"></option>
+                  <option value="10"></option>
+                </datalist>
+              </div>
+              <label class="top"
+                >Storm Region
+                <select name="stormregion">
+                  <option>Please Select</option>
+                  <option value="preston">Preston</option>
+                  <option value="sodasprings">Soda Springs</option>
+                  <option value="fishhaven">Fish Haven</option>
+                </select>
+              </label>
 
-            <div>User In-Danger Level</div>
-            <label class="sbs"
-              ><input type="radio" name="danger" value="yes" />Yes</label
-            >
-            <label class="sbs"
-              ><input type="radio" name="danger" value="no" />No</label
-            >
-            <label class="sbs"
-              ><input type="radio" name="danger" value="maybe" />Maybe</label
-            >
-          </fieldset>
-          <fieldset>
-            <legend>Additional Information</legend>
-            <label class="top"
-              ><textarea name="comments" rows="5" cols="50" placeholder="Add comments"></textarea>
-            </label>
-          </fieldset>
-          <input type="submit" value="Report Storm" class="submitBtn" />
-        </form> 
+              <div>User In-Danger Level</div>
+              <label class="sbs"
+                ><input type="radio" name="danger" value="yes" />Yes</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="danger" value="no" />No</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="danger" value="maybe" />Maybe</label
+              >
+            </fieldset>
+            <fieldset>
+              <legend>Additional Information</legend>
+              <textarea
+                class="top"
+                name="comments"
+                rows="5"
+                cols="50"
+                placeholder="Add comments"
+              ></textarea>
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitBtn" />
+          </form>
         </div>
       </main>
 
