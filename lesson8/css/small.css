@@ -238,9 +238,10 @@ form label.top, form div {
   color: #004AAD;
   font-size: .9rem;
 }
-form label.top textarea {
+#comments {
   border: solid 1px #003A79;
   padding: .75rem;
+  margin-bottom: .3rem;
 }
 form label.top input, form label.top select {
   -webkit-appearance: none;
