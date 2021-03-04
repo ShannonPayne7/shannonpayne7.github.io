@@ -7,7 +7,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+
     const prophets = jsonObject["prophets"];
     for (let i = 0; i < prophets.length; i++) {
       let card = document.createElement("section");
@@ -21,6 +21,7 @@ fetch(requestURL)
       p2.textContent = "Birth Place: " + prophets[i].birthplace;
       image.setAttribute('src', prophets[i].imageurl);
       image.setAttribute('alt', prophets[i].name + " " + prophets[i].lastname + "-" + (i+1));
+      image.setAttribute("loading", "lazy");
 
       card.appendChild(h2);
       card.appendChild(p1);

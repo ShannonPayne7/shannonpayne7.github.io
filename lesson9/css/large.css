@@ -1,0 +1,67 @@
+/*large screen*/
+@media only screen and (min-width: 48em) {
+ /* main,
+  footer {
+    max-width: 980px;
+    margin: 0 auto;
+  }*/
+  header img {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  .title p {
+    font-size: 22px;
+    margin-top: -26px;
+  }
+  .title {
+    margin-top: -13px;
+  }
+  nav ul a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  .pictureGallery {
+    max-width: 65em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+  }
+  .pictureGallery img:hover {
+    box-shadow: 0 0 10px 5px #B0B0B0;
+  }
+  .report {
+    margin-top: -1.6rem;
+  }
+  .report h2{
+    padding: 2.5rem 0 1.3rem 0;
+  }
+  form {
+    max-width: 55em;
+    margin: 0 auto;
+  }
+  form legend {
+    font-size: 1.2rem;
+  }
+  form label.top, form div {
+    font-size: 1.1rem;
+  }
+  form label.top input, form label.top select {
+    font-size: 1.2rem;
+    max-width: 30rem;
+  }
+  form label.top textarea {
+    width: 35rem;
+  }
+  .thankyou {
+    padding: 4.5rem;
+  }
+  .thankyou p {
+    font-size: 1.5rem;
+  }
+}
