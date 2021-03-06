@@ -290,6 +290,70 @@ form label.top input:required:valid {
 .thankyou p {
   font-size: 1.2rem;
 }
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+.cards {
+  padding: .5rem 3.2rem 1.1rem;
+}
+.cards section {
+  border: 3px solid transparent;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding-bottom: 1.3rem;
+  text-align: center;
+  background-color: rgba(0, 74, 173, 0.8);
+  box-shadow: 0 3px 4px 3px #737373;
+  color: white;
+}
+.cards img {
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 4px 1px #595959;
+  max-width: 100%;
+  height: auto;
+}
+.cards p {
+  font-size: 1.1rem;
+  margin: .5rem 0;
+}
+.cards p:first-of-type {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: -.8rem 0 1.1rem 0;
+}
+.cards p:last-of-type {
+  margin-bottom: 1.5rem; 
+}
+.rodeo {
+  background-color: #E8E8E8;
+  margin-top: -1rem;
+  padding: .1rem 1rem 1rem 1rem;
+}
+
+.rodeo h2 {
+  color: #003A79;
+  text-align: left;
+}
+.rodeo p {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.rodeo p:first-of-type {
+  margin-top: -.7rem;
+}
+.rodeo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0.5px 0.5px 4px 1px #595959;
+  margin: 0 auto;
+}
+.rodeotext {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
 .contactinfo {
   background-color: rgba(0, 74, 173, 0.4);
   margin-bottom: -10px;
