@@ -39,7 +39,7 @@
     border: 1px solid #404040;
   }
   .weatherSummaryTitle {
-    border-bottom: 2px solid #FE8D0B;
+    border-bottom: 2px solid #fe8d0b;
     font-size: 20px;
   }
   main h2 {
@@ -58,41 +58,61 @@
   .pictureGallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center; 
+    justify-items: center;
   }
   .pictureGallery img {
     max-width: 100%;
     height: auto;
   }
- .cards {
-   display: grid;
-   grid-template-columns: 1fr;
- }
- .cards section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- }
- .cards section:nth-child(odd) img {
-   grid-column: 1;
- }
-/*.cards section:nth-child(1) {
-  display
-}
- .cards section img {
-  display: flex;
-	flex-direction: row;
-}
-.cards section:nth-child(even) img {
-	flex-direction: row-reverse;
-}
-.cards section h2 {
-  display: flex;
-	flex-direction: row;
-}
-.cards section:nth-child(even) h2 {
-	flex-direction: row-reverse;
-}*/
-
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    width: 600px;
+    justify-content: center;
+  }
+  .cards section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .cards section:nth-child(even) .cardimage {
+    margin-right: 0.5rem;
+  }
+  .cards p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .cardimage {
+    padding: 0.9rem 0 0 0.5rem;
+  }
+  .cardtext {
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .cardtext h2 {
+    text-align: left;
+  }
+  .cardtext:nth-child(1) {
+    padding-left: 0;
+  }
+  .cards p:first-of-type {
+    font-size: 0.9rem;
+    margin: -0.8rem 0 1.1rem 0;
+  }
+  .rodeo {
+    border: 3px solid transparent;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  .rodeoheading {
+    text-align: center;
+  }
+  .rodeotext {
+    margin-top: 2rem;
+  }
   .report {
     margin-top: -1.5rem;
   }
@@ -101,7 +121,7 @@
     justify-self: center;
   }
   .addresses {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .date-info {
     font-size: 18px;

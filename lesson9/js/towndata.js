@@ -15,7 +15,7 @@ fetch(requestURL)
     
     datafilter.forEach(town => {
         let card = document.createElement("section");
-        //let textdiv = document.createElement("div");
+        let textdiv = document.createElement("div");
         let h2 = document.createElement("h2");
         let motto = document.createElement("p"); 
         let founded = document.createElement("p");
@@ -32,16 +32,17 @@ fetch(requestURL)
         image.setAttribute("src", "images/" + town.photo);
         image.setAttribute('alt', `Picture of the town of ${town.name}, Idaho`);
         image.setAttribute("loading", "lazy");
+        imagediv.setAttribute("class", "cardimage");
+        textdiv.setAttribute("class", "cardtext")
 
-        //card.appendChild(textdiv);
-        //textdiv.appendChild(h2, motto, founded, population, rain);
-        card.appendChild(h2);
-        card.appendChild(motto);
-        card.appendChild(founded);
-        card.appendChild(population);
-        card.appendChild(rain);
-        card.appendChild(imagediv);
+        textdiv.appendChild(h2);
+        textdiv.appendChild(motto);
+        textdiv.appendChild(founded);
+        textdiv.appendChild(population);
+        textdiv.appendChild(rain);
         imagediv.appendChild(image);
+        card.appendChild(imagediv);
+        card.appendChild(textdiv);
         cards.appendChild(card);
     });
     

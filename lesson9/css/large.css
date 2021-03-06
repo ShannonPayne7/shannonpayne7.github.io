@@ -1,10 +1,6 @@
 /*large screen*/
 @media only screen and (min-width: 48em) {
- /* main,
-  footer {
-    max-width: 980px;
-    margin: 0 auto;
-  }*/
+ 
   header img {
     max-width: 100%;
     padding-right: 20px;
@@ -65,12 +61,13 @@
     font-size: 1.5rem;
   }
   .cards {
-    display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0 auto;
     justify-content: center;
-    max-width: 980px;
+    max-width: 955px;
+    flex-wrap: nowrap;
+    margin-bottom: -2rem;
   }
   .cards section {
     display: inline-block;
@@ -79,6 +76,12 @@
     box-shadow: none;
     padding: 0 .5rem 1.3rem .5rem;
   }
+  .cards section:nth-child(even) .cardtext {
+    margin-left: 0;
+  }
+  .cards section:nth-child(even) .cardimage {
+    margin-right: 0;
+  }
   .cards p:first-of-type {
     font-size: .8rem;
   }
@@ -86,14 +89,13 @@
     font-size: 1.1rem;
     margin: .5rem 0;
   }
- /* .rodeoinfo {
-    display: flex;
-    flex-direction: column;
-  }*/
+ .cardimage {
+  padding: 1.4rem 0 0 0;
+ }
   .rodeo img {
     display: inline;
     float: right;
-    margin-top: -5rem;
+    margin-top: -1rem;
     margin-right: .2rem;
     max-width: 100%;
     height: auto;
@@ -116,5 +118,7 @@
   .rodeo {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
   }
 }

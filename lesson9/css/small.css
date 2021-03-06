@@ -313,6 +313,9 @@ form label.top input:required:valid {
   max-width: 100%;
   height: auto;
 }
+.cardimage {
+  padding-top: 1rem;
+}
 .cards p {
   font-size: 1.1rem;
   margin: .5rem 0;
@@ -328,9 +331,8 @@ form label.top input:required:valid {
 .rodeo {
   background-color: #E8E8E8;
   margin-top: -1rem;
-  padding: .1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
-
 .rodeo h2 {
   color: #003A79;
   text-align: left;
@@ -386,7 +388,7 @@ form label.top input:required:valid {
   color: white;
   font-size: 16px;
 }
-#byui-link {
+#byui-link, #portal-page {
   color: white;
 }
 #dateModified {
