@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    <link
+    <!--<link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
       rel="stylesheet"
-    />
+    />-->
   </head>
 
   <body>
@@ -34,12 +34,12 @@
       <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-          <li><a href="https://shannonpayne7.github.io/">Home</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson9/index.html">Home</a></li>
           <li><a class="current" href="preston-5.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
       </nav>
 
@@ -62,10 +62,10 @@
             </div>
             <div class="weatherNumbers">
               <p>Sunny</p>
-              <p>75&#8457;</p>
-              <p>73&#8457;</p>
+              <p><span id="temperature">49</span>&#8457;</p>
+              <p><span id="windchill"></span>&#8457;</p>
               <p>6 %</p>
-              <p>4 mph</p>
+              <p><span id="windspeed">4</span> mph</p>
             </div>
           </div>
         </div>
@@ -146,6 +146,9 @@
       </footer>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
