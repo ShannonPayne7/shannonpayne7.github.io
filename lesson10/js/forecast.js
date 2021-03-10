@@ -1,3 +1,4 @@
+//weather summary
 const apiURL =
   "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
 fetch(apiURL)
@@ -7,7 +8,6 @@ fetch(apiURL)
 
     const current = jsObject.weather[0].main + " " + Math.round(jsObject.main.temp);
     document.getElementById("current").textContent = current;
-
     document.getElementById("temperature").textContent = Math.round(jsObject.main.temp_max);
     document.getElementById("low").textContent = Math.round(jsObject.main.temp_min);
     document.getElementById("windchill").innerText = windChill(jsObject.main.temp_max, jsObject.wind.speed);
@@ -15,7 +15,7 @@ fetch(apiURL)
     document.getElementById("windspeed").textContent = Math.round(jsObject.wind.speed);
 });
 
-
+//compute windchill
 function windChill(tempF, speed) {
     if (tempF > 50 || speed <= 3) {
         return "n/a";
@@ -25,27 +25,17 @@ function windChill(tempF, speed) {
     return calculate.toFixed(0);
 }
 
-/*
-<div class="weatherNumbers">
-              <p><span id="current">Sunny</span></p>
-              <p><span id="temperature">49</span>&#8457;</p>
-              <p><span id="windchill"></span>&#8457;</p>
-              <p>6 %</p>
-              <p><span id="windspeed">4</span> mph</p>
-            </div>
-*/
-
+//five day forecast
 const apiForecastURL =
   "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+
     let forecast = document.getElementById("forecast");
 
     const datafilter = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
 
-    console.log(datafilter);
     let i = 1;
     datafilter.forEach(day => {
         document.getElementById("day" + i).textContent = getDayOfWeek(day.dt);
@@ -65,5 +55,3 @@ function getDayOfWeek(dt) {
     return days[ dtDate.getDay() ]; 
 }
 
-// Call for Forecast
-//http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c
