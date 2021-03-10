@@ -1,6 +1,6 @@
 //weather summary
 const apiURL =
-  "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
+  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -27,7 +27,7 @@ function windChill(tempF, speed) {
 
 //five day forecast
 const apiForecastURL =
-  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=70d5699f094618095ca99927b544bc2c";
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
