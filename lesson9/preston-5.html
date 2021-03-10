@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather Watch Idaho Preston Page</title>
+    <title>Weather Watch Idaho Preston Home Page</title>
     <meta
       name="description"
       content="Preston Home Page for Weather Watch Idaho detailing local weather and events"
@@ -34,42 +34,37 @@
       <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="current" href="preston-10.html">Preston</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson9/index.html">Home</a></li>
+          <li><a class="current" href="preston-5.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
-          <li><a href="stormcenter.html">Storm Center</a></li>
-          <li><a href="gallery-7.html">Gallery</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="https://shannonpayne7.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
       </nav>
 
       <main>
         <h2>Preston, Idaho</h2>
         <div class="heroSummary">
-          <div class="hero-pic">
-            <picture>
-              <source media="(max-width:529px)" srcset="images/preston550.jpg" />
-              <source media="(max-width:767px)" srcset="images/preston770.jpg" />
-              <source media="(min-width:801px)" srcset="images/preston980.jpg" />
-              <img src="images/preston980.jpg" alt="friends at music festival" loading="lazy"/>
-            </picture>
-          </div>
+          <img
+            src="images/hero-pexels-leah-kelley-crop.jpg"
+            class="hero-pic"
+            alt="friends at music festival"
+          />
           <div class="weathersummary">
             <div class="weatherSummaryTitle">Weather Summary</div>
             <div class="weathercategories">
               <p>Currently:</p>
               <p>High:</p>
-              <p>Low:</p>
               <p>Wind Chill:</p>
               <p>Humidity:</p>
               <p>Wind Speed:</p>
             </div>
             <div class="weatherNumbers">
-              <p><span id="current"></span> &#8457;</p>
-              <p><span id="temperature"></span> &#8457;</p>
-              <p><span id="low"></span> &#8457;</p>
-              <p><span id="windchill"></span> &#8457;</p>
-              <p><span id="humidity"></span> %</p>
+              <p>Sunny</p>
+              <p><span id="temperature">49</span>&#8457;</p>
+              <p><span id="windchill"></span>&#8457;</p>
+              <p>6 %</p>
               <p><span id="windspeed">4</span> mph</p>
             </div>
           </div>
@@ -78,25 +73,25 @@
         <div>
           <table class="fiveday">
             <tr class="daysOfWeek">
-              <th id="day1"></th>
-              <th id="day2"></th>
-              <th id="day3"></th>
-              <th id="day4"></th>
-              <th id="day5"></th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thur</th>
+              <th>Fri</th>
             </tr>
             <tr class="dailyIcons">
-              <td><img src="" alt="" id="icon1" /></td>
-              <td><img src="" alt="" id="icon2" /></td>
-              <td><img src="" alt="" id="icon3" /></td>
-              <td><img src="" alt="" id="icon4" /></td>
-              <td><img src="" alt="" id="icon5" /></td>
+              <td><img src="images/partlyCloudyIcon.png" alt="partly cloudy icon"></td>
+              <td><img src="images/rainyIcon.png" alt="rain icon"></td>
+              <td><img src="images/partlyCloudyIcon.png" alt="partly cloudy icon"></td>
+              <td><img src="images/sunnyIcon.png" alt="sun icon"></td>
+              <td><img src="images/sunnyIcon.png" alt="sun icon"></td>
             </tr>
             <tr class="dailyHigh">
-              <td id="temp1">&#8457;</td>
-              <td id="temp2">&#8457;</td>
-              <td id="temp3">&#8457;</td>
-              <td id="temp4">&#8457;</td>
-              <td id="temp5">&#8457;</td>
+              <td>62&#8457;</td>
+              <td>57&#8457;</td>
+              <td>60&#8457;</td>
+              <td>64&#8457;</td>
+              <td>67&#8457;</td>
             </tr>
           </table>
         </div>
@@ -145,13 +140,8 @@
             <a href="https://www.byui.edu/online" target="_blank" id="byui-link"
               >BYUI Online Learning</a
             >
-            |
-            <a href="https://shannonpayne7.github.io/" id="portal-page"
-              >WDD230 Portal</a
-            >
           </p>
           <div id="dateModified"></div>
-          <p>Weather Powered by <a href="https://openweathermap.org/" target="_blank" id="weather-link">OpenWeatherMap</a></p>
         </div>
       </footer>
     </div>
@@ -159,7 +149,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/date.js"></script>
-    <script src="js/forecast.js"></script>
-    
+    <script src="js/windchill.js"></script>
   </body>
 </html>
