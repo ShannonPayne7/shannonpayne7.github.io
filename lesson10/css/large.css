@@ -1,0 +1,124 @@
+/*large screen*/
+@media only screen and (min-width: 48em) {
+ 
+  header img {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  .title p {
+    font-size: 22px;
+    margin-top: -26px;
+  }
+  .title {
+    margin-top: -13px;
+  }
+  nav ul a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  .pictureGallery {
+    max-width: 65em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+  }
+  .pictureGallery img:hover {
+    box-shadow: 0 0 10px 5px #B0B0B0;
+  }
+  .report {
+    margin-top: -1.6rem;
+  }
+  .report h2{
+    padding: 2.5rem 0 1.3rem 0;
+  }
+  form {
+    max-width: 55em;
+    margin: 0 auto;
+  }
+  form legend {
+    font-size: 1.2rem;
+  }
+  form label.top, form div {
+    font-size: 1.1rem;
+  }
+  form label.top input, form label.top select {
+    font-size: 1.2rem;
+    max-width: 30rem;
+  }
+  form label.top textarea {
+    width: 35rem;
+  }
+  .thankyou {
+    padding: 4.5rem;
+  }
+  .thankyou p {
+    font-size: 1.5rem;
+  }
+  .cards {
+    flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 955px;
+    flex-wrap: nowrap;
+    margin-bottom: -2rem;
+  }
+  .cards section {
+    display: inline-block;
+    margin: .3rem .4rem 1.7rem .4rem;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 .5rem 1.3rem .5rem;
+  }
+  .cards section:nth-child(even) .cardtext {
+    margin-left: 0;
+  }
+  .cards section:nth-child(even) .cardimage {
+    margin-right: 0;
+  }
+  .cards p:first-of-type {
+    font-size: .8rem;
+  }
+  .cards p {
+    font-size: 1.1rem;
+    margin: .5rem 0;
+  }
+ .cardimage {
+  padding: 1.4rem 0 0 0;
+ }
+  .rodeo img {
+    display: inline;
+    float: right;
+    margin-top: -1rem;
+    margin-right: .2rem;
+    max-width: 100%;
+    height: auto;
+  }
+  .rodeotext {
+    font-size: 1rem;
+    margin-top: 2.2rem;
+    padding-left: 1rem;
+  }
+  .rodeoheading {
+    margin-top: -.7rem;
+    padding-left: 1rem;
+  }
+  .rodeo h2 {
+    margin-bottom: 1rem;
+  }
+  .rodeo ul {
+    margin: -.5rem 0 1rem 0;
+  }
+  .rodeo {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
+  }
+}
