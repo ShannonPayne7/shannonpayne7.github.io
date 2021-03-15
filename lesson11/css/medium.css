@@ -1,0 +1,129 @@
+/*medium screen */
+@media only screen and (min-width: 33em) {
+  .title h1 {
+    font-size: 35px;
+  }
+  .title p {
+    font-size: 20px;
+    margin-top: -21px;
+  }
+  header img {
+    max-width: 115px;
+    padding-right: 20px;
+  }
+  #menuButton {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    white-space: nowrap;
+  }
+  nav ul a {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .weathersummary {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(255, 255, 240, 0.8);
+    border: 1px solid #404040;
+  }
+  .weatherSummaryTitle {
+    border-bottom: 2px solid #fe8d0b;
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 28px;
+  }
+  .fiveday {
+    margin-bottom: 15px;
+  }
+  .eventarticle {
+    padding-bottom: 30px;
+  }
+  .articleimage {
+    float: right;
+    margin-right: 25px;
+  }
+  .pictureGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .pictureGallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    width: 600px;
+    justify-content: center;
+  }
+  .cards section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .cards section:nth-child(even) .cardimage {
+    margin-right: 0.5rem;
+  }
+  .cards p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .cardimage {
+    padding: 0.9rem 0 0 0.5rem;
+  }
+  .cardtext {
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .cardtext h2 {
+    text-align: left;
+  }
+  .cardtext:nth-child(1) {
+    padding-left: 0;
+  }
+  .cards p:first-of-type {
+    font-size: 0.9rem;
+    margin: -0.8rem 0 1.1rem 0;
+  }
+  .rodeo {
+    border: 3px solid transparent;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  .rodeoheading {
+    text-align: center;
+  }
+  .rodeotext {
+    margin-top: 2rem;
+  }
+  .report {
+    margin-top: -1.5rem;
+  }
+  .prestonMap {
+    margin: 10px 0;
+    justify-self: center;
+  }
+  .addresses {
+    font-size: 0.9rem;
+  }
+  .date-info {
+    font-size: 18px;
+  }
+}

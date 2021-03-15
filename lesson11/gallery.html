@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather Watch Idaho Home Page</title>
+    <title>Weather Watch Idaho Preston Home Page</title>
     <meta
       name="description"
-      content="Home page for Weather Watch Idaho covering southeastern Idaho"
+      content="Preston Home Page for Weather Watch Idaho detailing local weather and events"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/normalize.min.css" />
@@ -33,56 +33,58 @@
       <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="preston-5.html">Preston</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="stormcenter.html">Storm Center</a></li>
-          <li><a href="gallery-7.html">Gallery</a></li>
+          <li><a class="current" href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
 
       <main>
-        <div class="hero">
-          <picture>
-            <source media="(max-width:529px)" srcset="images/hometown550.jpg" />
-            <source media="(max-width:767px)" srcset="images/hometown770.jpg" />
-            <source media="(min-width:801px)" srcset="images/hometown980.jpg" />
-            <img src="images/hometown980.jpg" alt="sunrise on town" />
-          </picture>
-        </div>
-        <div class="cards"></div>
-        <section class="rodeo">
-          <div class="rodeoinfo">
-            <img
-              src="images/rodeo500.jpg"
-              alt="horse and rider at rodeo"
-              loading="lazy"
-            />
-            <div class="rodeoheading">
-              <h2>Old West Days</h2>
-              <p>April 23-24, 2021 at the Preston Fairgrounds</p>
-            </div>
-            <div class="rodeotext">
-              <p>Friends and Neighbors, come join the fun!</p>
-              <ul>
-                <li>Hometown Parade</li>
-                <li>Petting Zoo</li>
-                <li>Livestock Sale</li>
-                <li>Farmer's Market</li>
-                <li>Crafts and Quilts</li>
-                <li>Live Music and Dance</li>
-                <li>Rodeo</li>
-                <li>Much more!</li>
-              </ul>
-              <p>
-                Stay tuned for more details!
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+        <h2>Weather Gallery</h2>
+        <div class="pictureGallery">
+            <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/cloudysunset_300_200.jpg" alt="storm at sunset">
+                <figcaption>Storm at Sunset</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/foggylake300_200.jpg" alt="fog on the lake">
+                <figcaption>Winter Day at the Lake</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/muddyroad_300_200.jpg" alt="muddy dirt road">
+                <figcaption>The passing of the Storm</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/rain_swings_300_200.jpg" alt="playing in rain">
+                <figcaption>Swinging in the Rain</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/rainbow300_200.jpg" alt="rainbow">
+                <figcaption>Somewhere Over the Rainbow</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/snowyfence_300_200.jpg" alt="snowy road">
+                <figcaption>Blanketed in Snow</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/snowytrees_300_200.jpg" alt="snow on trees">
+                <figcaption>Winter Day on the Lake</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/sun_snow_300_200.jpg" alt="sun shining on snow">
+                <figcaption>The Sun Still Shines in Winter</figcaption>
+              </figure>
+              <figure>
+                <img src="images/galleryImagesPlaceholder.png" data-src="images/sunset_300_200.jpg" alt="sunset">
+                <figcaption>Summer Sunrise</figcaption>
+              </figure>
 
+        </div>
+
+        </main>
       <footer>
         <div class="contactinfo">
           <img
@@ -123,6 +125,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/date.js"></script>
-    <script src="js/towndata.js"></script>
+    <script src="js/lazyload.js"></script>
   </body>
 </html>
