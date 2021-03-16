@@ -10,7 +10,7 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
     const events =  document.getElementById("events");
     const city = events.innerHTML;
-    events.innerHTML = "Upcoming Events";
+    events.innerHTML = "";
     const datafilter = towns.filter(x => x.name == city);
 
     datafilter.forEach(town => {
