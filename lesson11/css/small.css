@@ -111,20 +111,22 @@ main h2 {
   position: relative;
 }
 
-/*.hero-pic {
+.hero-pic img {
   max-width: 100%;
   height: auto;
   display: block;
-}*/
+}
 .weathersummary {
   position: static;
-  padding: 10px;
+  padding: 10px 10px 17px 10px;
   font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
   display: grid;
   column-gap: 8px;
   grid-template-columns: repeat(2, 1fr); 
   background-color: #E8E8E8;
+  margin-top: -.3rem;
+  margin-bottom: -1.1rem;
 }
 .weatherSummaryTitle {
   margin: 5px 15px 0;
@@ -162,6 +164,7 @@ main h2 {
 .fiveday th, td {
   border: 1px solid #404040;
   padding: 5px;
+  text-align: center;
 }
 .daysOfWeek {
   background-color: rgba(0, 74, 173, 0.8);
@@ -171,8 +174,21 @@ main h2 {
 .dailyIcons {
   background-color: rgba(0, 74, 173, 0.4);
 }
+.dailyIcons img {
+  max-width: 75%;
+  height: auto;
+}
 .dailyHigh {
-  text-align: center;
+  background-color: rgba(0, 74, 173, 0.8);
+  color: white;
+}
+.upcoming {
+  padding: .3rem 1rem .6rem 2.6rem;
+  margin: .9rem 0 -1.9rem 0;
+  background-color: #E8E8E8;;
+}
+.upcoming li {
+  font-size: 1.1rem;
 }
 .eventarticle {
   background-color: #E8E8E8;
@@ -334,6 +350,7 @@ form label.top input:required:valid {
 .rodeo {
   background-color: #E8E8E8;
   margin-top: -1rem;
+  margin-bottom: .7rem;
   padding: 1rem 1rem 1rem 1rem;
 }
 .rodeo h2 {
@@ -362,45 +379,58 @@ form label.top input:required:valid {
 .contactinfo {
   background-color: rgba(0, 74, 173, 0.4);
   margin-bottom: -10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding: .8rem 1rem;
+}
+.prestonMap {
+  max-width: 100%;
+  height: auto;
 }
 .addresses {
-  padding-left: 10px;
+  padding-left: .8rem;
   font-size: .9rem;
-  margin-top: -20px;
+  margin-top: -1.25rem;
 }
 .addresses p {
-  margin-top: -8px;
+  margin-top: -.5rem;
 }
 .addresses h4 {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 16px;
-  margin-bottom: 14px;
+  font-size: 1rem;
+  margin-bottom: .875rem;
 }
 .socialMedia img {
-  max-width: 25px;
-  margin-right: 7px;
-  margin-top: 10px;
+  max-width: 1.5625rem;
+  margin-right: 0.4375rem;
+  margin-top: .625rem;
 }
 .date-info {
   padding: 1px 0 5px;
-  margin-top: 10px;
+  margin-top: .625rem;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 #byui-link, #portal-page, #weather-link {
   color: white;
 }
 #dateModified {
-  margin-top: -10px;
-  margin-bottom: 10px;
+  margin-top: -.625rem;
+  margin-bottom: .625rem;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (max-width: 25em) {
+  .contactinfo {
+    display: block;
+    text-align: center;
+  }
+  .prestonMap {
+    max-width: 50%;
+  }
 }
