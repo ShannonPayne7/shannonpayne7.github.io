@@ -34,9 +34,9 @@
   .report {
     margin-top: -1.6rem;
   }
-  .report h2{
+  /*.report h2{
     padding: 2.5rem 0 1.3rem 0;
-  }
+  }*/
   form {
     max-width: 55em;
     margin: 0 auto;
@@ -60,21 +60,28 @@
   .thankyou p {
     font-size: 1.5rem;
   }
+  .dailyIcons img {
+    max-width: 100%;
+  }
   .cards {
     flex-direction: row;
     padding: 0;
     margin: 0 auto;
-    justify-content: center;
-    max-width: 955px;
+    justify-content: space-between;
+    max-width: 980px;
     flex-wrap: nowrap;
     margin-bottom: -2rem;
+    gap: .7rem;
   }
   .cards section {
     display: inline-block;
-    margin: .3rem .4rem 1.7rem .4rem;
+    margin: .3rem 0 1.7rem 0;
     border-radius: 0;
     box-shadow: none;
     padding: 0 .5rem 1.3rem .5rem;
+  }
+  .cardtext {
+    padding-left: 1.5rem;
   }
   .cards section:nth-child(even) .cardtext {
     margin-left: 0;
@@ -116,9 +123,16 @@
     margin: -.5rem 0 1rem 0;
   }
   .rodeo {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: .6rem;
+    margin-top: 1rem;
     border: none;
     border-radius: 0;
+  }
+  .addresses {
+    padding-left: 1rem;
+    padding-right: 15rem;
+    font-size: .9rem;
+    
   }
 }

@@ -43,7 +43,7 @@ function windChill(tempF, speed) {
     0.6215 * tempF -
     35.75 * speed ** 0.16 +
     0.4275 * tempF * speed ** 0.16;
-  return calculate.toFixed(0);
+  return calculate.toFixed(0) + " ℉";
 }
 
 //five day forecast

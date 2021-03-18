@@ -102,11 +102,11 @@
     font-size: 0.9rem;
     margin: -0.8rem 0 1.1rem 0;
   }
-  .rodeo {
+  /*.rodeo {
     border: 3px solid transparent;
     margin: 1rem;
     border-radius: 10px;
-  }
+  }*/
   .rodeoheading {
     text-align: center;
   }
@@ -117,8 +117,11 @@
     margin-top: -1.5rem;
   }
   .prestonMap {
-    margin: 10px 0;
     justify-self: center;
+  }
+  .addresses {
+    padding-left: 1rem;
+    padding-right: 4.5rem;
   }
   .addresses {
     font-size: 0.9rem;
