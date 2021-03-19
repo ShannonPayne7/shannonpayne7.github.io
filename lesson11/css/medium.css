@@ -1,15 +1,15 @@
 /*medium screen */
 @media only screen and (min-width: 33em) {
   .title h1 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .title p {
-    font-size: 20px;
-    margin-top: -21px;
+    font-size: 1.25rem;
+    margin-top: -1.3125em;
   }
   header img {
     max-width: 115px;
-    padding-right: 20px;
+    padding-right: 1.25rem;
   }
   #menuButton {
     display: none;
@@ -28,25 +28,25 @@
   }
   nav ul a {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
   }
   .weathersummary {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 0.9375rem;
+    left: 0.9375rem;
     background-color: rgb(255, 255, 240, 0.8);
     border: 1px solid #404040;
   }
   .weatherSummaryTitle {
     border-bottom: 2px solid #fe8d0b;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   main h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .fiveday {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
   .upcoming {
     margin-left: 0;
@@ -139,6 +139,6 @@
     font-size: 0.9rem;
   }
   .date-info {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

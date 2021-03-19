@@ -38,17 +38,17 @@ header, main, footer, table{
 .title h1 {
   font-family: "Open Sans", Arial, sans-serif;
   color: #fe8d0b;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .title p {
   color: #004aad;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-top: -18px;
+  margin-top: -1.125rem;
   text-align: left;
 }
 .title {
-  margin-top: -13px;
+  margin-top: -0.8125rem;
 }
 header {
   display: flex;
@@ -57,8 +57,8 @@ header {
   background-color: rgba(0, 179, 231, 0.2);
 }
 header img {
-  max-width: 100px;
-  padding-right: 20px;
+  max-width: 6.25rem;
+  padding-right: 1.25rem;
 }
 nav, .date-info {
   background-color: rgba(0, 74, 173, 0.8);
@@ -84,7 +84,7 @@ nav ul a {
   display: block;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -104,7 +104,7 @@ nav ul.hide {
 main h2 {
   text-align: center;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .heroSummary {
   position: relative;
@@ -117,30 +117,30 @@ main h2 {
 }
 .weathersummary {
   position: static;
-  padding: 10px 10px 17px 10px;
+  padding: 0.625rem 0.625rem 1.0625rem 0.625rem;
   font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
   display: grid;
-  column-gap: 8px;
+  column-gap: 0.5rem;
   grid-template-columns: repeat(2, 1fr); 
   background-color: #E8E8E8;
   margin-top: -.3rem;
   margin-bottom: -1.1rem;
 }
 .weatherSummaryTitle {
-  margin: 5px 15px 0;
-  padding-bottom: 4px;
+  margin: 0.3125rem 0.9375rem 0;
+  padding-bottom: 0.25rem;
   font-weight: 600;
   grid-column: 1/3;
   text-align: center;
   color: #003A79;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 800;
 }
 .weathersummary p {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  font-size: 18px;
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 .weathercategories {  
@@ -151,18 +151,18 @@ main h2 {
   color: #003A79;
 }
 .weathercategories, .weatherNumbers {
-  margin-top: 3px;
+  margin-top: 0.1875rem;
 }
 .fiveday {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  margin-top: 15px;
-  margin-bottom: -15px;
+  margin-top: 0.9375rem;
+  margin-bottom: -0.9375rem;
 }
 .fiveday th, td {
   border: 1px solid #404040;
-  padding: 5px;
+  padding: 0.3125rem;
   text-align: center;
 }
 .daysOfWeek {
@@ -215,7 +215,7 @@ main h2 {
 }
 .eventarticle {
   background-color: #E8E8E8;
-  padding-top: 15px;
+  padding-top: 0.9375rem;
   margin: 3.5rem 0 1.4rem 0;
 }
 .articleimage {
@@ -223,7 +223,7 @@ main h2 {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   box-shadow: 5px 5px 20px gray;
   border-radius: 5px;
 }
@@ -232,12 +232,12 @@ main h2 {
 }
 .communityevent p {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 .communityevent {
-  padding: 10px 40px;
-  margin-top: -10px;
+  padding: 0.625rem 2.5rem;
+  margin-top: -0.625rem;
 }
 .communityevent a {
   word-wrap: break-word;
@@ -253,8 +253,8 @@ main h2 {
   transition: filter 0.5s;
 }
 .pictureGallery figure {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
 .report {
   background-color: #E8E8E8;
@@ -434,7 +434,7 @@ form label.top input:required:valid {
   margin-top: .625rem;
 }
 .date-info {
-  padding: 1px 0 5px;
+  padding: 0.0625rem 0 0.3125rem;
   margin-top: .625rem;
   color: white;
   font-size: 1rem;
