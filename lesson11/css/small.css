@@ -13,7 +13,6 @@ main, footer {
 
 main .heroSummary{
   display: block;
-  /* width: 100%; */
   height: auto;
   max-width: 1100px;
 }
@@ -182,18 +181,42 @@ main h2 {
   background-color: rgba(0, 74, 173, 0.8);
   color: white;
 }
+.spotlight {
+  margin: 2rem 0;
+}
+.spotlight h2 {
+  text-align: left;
+  padding-left: 1rem;
+}
 .upcoming {
-  padding: .3rem 1rem .6rem 2.6rem;
-  margin: .9rem 0 -1.9rem 0;
-  background-color: #E8E8E8;;
+  padding: 1rem 1rem;
+  margin: .9rem .5rem -1.9rem .5rem;
+  border: 2px solid #404040;
+  border-radius: 10px;
+  display: flex;
+}
+.upcoming h3 {
+  margin-top: .6rem;
 }
 .upcoming li {
   font-size: 1.1rem;
 }
+.upcoming img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px gray;
+  max-width: 100%;
+  height: auto;
+}
+.eventdetails {
+  padding-left: .7rem;
+}
+.eventdetails li {
+  font-size: 1rem;
+}
 .eventarticle {
   background-color: #E8E8E8;
   padding-top: 15px;
-  margin-top: 30px;
+  margin: 3.5rem 0 1.4rem 0;
 }
 .articleimage {
   display: block;
@@ -213,8 +236,11 @@ main h2 {
   line-height: 22px;
 }
 .communityevent {
-  padding: 20px 40px;
+  padding: 10px 40px;
   margin-top: -10px;
+}
+.communityevent a {
+  word-wrap: break-word;
 }
 .pictureGallery {
   text-align: center;
@@ -238,7 +264,7 @@ main h2 {
   padding-top: 1.5rem;
 }
 form fieldset {
-  margin: 1.5rem 0;
+  margin: 1.5rem .5rem;
   border: 2px solid #003A79;
   border-radius: 10px;
   padding: .5rem 2%;
@@ -271,7 +297,7 @@ form label.top input, form label.top select {
   padding: .75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem;
+  max-width: 17rem;
   background-color: #F5F5F5;
 }
 .slider {
@@ -351,7 +377,7 @@ form label.top input:required:valid {
   background-color: #E8E8E8;
   margin-top: -1rem;
   margin-bottom: .7rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 .rodeo h2 {
   color: #003A79;
@@ -370,6 +396,7 @@ form label.top input:required:valid {
   max-width: 100%;
   height: auto;
   box-shadow: 0.5px 0.5px 4px 1px #595959;
+  border-radius: 10px;
   margin: 0 auto;
 }
 .rodeotext {
@@ -432,5 +459,12 @@ form label.top input:required:valid {
   }
   .prestonMap {
     max-width: 50%;
+  }
+  .upcoming {
+    display: block;
+    text-align: left;
+  }
+  .upcoming img {
+    display: none;
   }
 }
