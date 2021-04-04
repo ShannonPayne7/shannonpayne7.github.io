@@ -1,0 +1,53 @@
+{
+"localBusiness": [
+    {
+    "name": "Milano Music Center",
+    "phone": "480-827-1111",
+    "address": "38 W Main St Mesa, AZ 85201",
+    "website": "https://milanomusic.com/",
+    "logo": "images/milano250.jpg"
+    },
+    {
+    "name": "Serrano's Mexican Restaurant",
+    "phone": "480-854-7455",
+    "address": "1021 S Power Rd Mesa, AZ 85206",
+    "website": "https://serranosaz.com/",
+    "logo": "images/serranos250.jpg"
+    },
+    {
+    "name": "Pomeroy's Men's and Missionary Store",
+    "phone": "480-833-0733",
+    "address": "136 W Main St Mesa, AZ 85201",
+    "website": "https://pomeroysclothing.com/",
+    "logo": "images/pomeroys250.jpg"
+    },
+    {
+    "name": "A Closet Full of Dresses",
+    "phone": "480-868-8906",
+    "address": "1249 N Greenfield Rd #103 Mesa, AZ 85205",
+    "website": "https://aclosetfullofdresses.com/",
+    "logo": "images/closetDresses175.jpg"
+    },
+    {
+    "name": "Sam and Luca Rustic Kitchen",
+    "phone": "480-659-6716",
+    "address": "1959 S Power Road Mesa, Arizona 85206",
+    "website": "https://www.samandlucaaz.com/",
+    "logo": "images/samLucaKitchen250.jpg"
+    },
+    {
+    "name": "Global Bikes",
+    "phone": "602-675-1774",
+    "address": "1010 W Southern Ave #3 Mesa, AZ 85210",
+    "website": "https://www.globalbikes.info/",
+    "logo": "images/globalBikes250.jpg"
+    },   
+    {
+    "name": "Golfland Sunsplash",
+    "phone": "480-834-8319",
+    "address": "155 W Hampton Ave Mesa, AZ 85210",
+    "website": "https://www.golfland.com/mesa/",
+    "logo": "images/golfland250.jpg"
+    }  
+]
+}
