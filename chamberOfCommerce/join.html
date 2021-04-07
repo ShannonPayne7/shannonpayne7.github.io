@@ -9,14 +9,14 @@
       content="Join Form for Chamber of Commerce Members"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--<link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />-->
+    <link rel="stylesheet" href="css/large.css" />
   </head>
 
   <body>
-    <div id="content">
+    <div class="content">
       <!--<div id="announcement" class="hideannouncement">
         <p>
           Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
@@ -25,6 +25,7 @@
       </div>-->
       <header>
         <img
+          class="logo"
           src="images/chamberLogo200.png"
           alt="chamber of commerce website logo"
         />
@@ -49,7 +50,7 @@
           <picture>
             <source
               media="(max-width:529px)"
-              srcset="images/mesaSign550x182"
+              srcset="images/mesaSign550x182.jpg"
             />
             <source
               media="(max-width:767px)"
@@ -67,72 +68,73 @@
           </picture>
         </div>
         <div class="joinUs">
-            <h2>Join the Mesa Chamber of Commerce</h2>
-            <p>The Chamber of Commerce is here for you. Joining the Chamber allows you to connect with other community business owners for networking and support, and gives you greater exposure to the public. The Chamber of Commerce gives you a voice in the direction of legislation that affects your everyday business decisions and outcomes. You are busy, so let the Chamber of Commerce help you and your business to thrive.</p>
-            <p>Benefits of joining:</p>
-            <ul>
-                <li>Make Business Contacts in the Community</li>
-                <li>Receive monthly newsletters</li>
-                <li>Customer Referrals</li>
-                <li>Bring credibility to your business</li>
-                <li>Increase your visibility in the community</li>
-                <li>Networking opportunities</li>
-                <li>Have your voice heard in government</li>
-            </ul>
+          <h2>Join the Mesa Chamber of Commerce</h2>
+          <p>
+            The Chamber of Commerce is here for you. Joining the Chamber allows
+            you to connect with other community business owners for networking
+            and support, and gives you greater exposure to the public. The
+            Chamber of Commerce gives you a voice in the direction of
+            legislation that affects your everyday business decisions and
+            outcomes. You are busy, so let the Chamber of Commerce help you and
+            your business to thrive.
+          </p>
+          <p>Benefits of joining:</p>
+          <ul>
+            <li>Make Business Contacts in the Community</li>
+            <li>Receive monthly newsletters</li>
+            <li>Customer Referrals</li>
+            <li>Bring credibility to your business</li>
+            <li>Increase your visibility in the community</li>
+            <li>Networking opportunities</li>
+            <li>Have your voice heard in government</li>
+          </ul>
         </div>
         <div class="joinForm">
-            <h3>Become a Member Today</h3>
-            <form method="get" action="confirm.html">
-                <fieldset>
-                  <legend>Contact Information (*Required)</legend>
-                  <label class="top"
-                    >First Name*
-                    <input
-                      type="text"
-                      name="firstname"
-                      placeholder="John"
-                      required
-                      pattern="[a-zA-Z\s]"
-                      title="Use upper or lower case letters"
-                  /></label>
-                  <label class="top"
-                  >Last Name*
-                  <input
-                    type="text"
-                    name="lastname"
-                    placeholder="Smith"
-                    required
-                    pattern="[a-zA-Z\s]"
-                    title="Use upper or lower case letters"
-                    /></label>
-                    <label class="top"
-                    >Title<input
-                      type="text"
-                      name="title"
-                      placeholder="Manager"
-                  /></label>
-                  <label class="top"
-                    >Email<input
-                      type="email"
-                      name="email"
-                      placeholder="user@gmail.com"
-                  /></label>
-                  <label class="top"
-                    >Cell Phone*<input
-                      type="tel"
-                      name="phone"
-                      placeholder="1235551234"
-                      required
-                  /></label>
-                  <label class="top"
-                  >Business Name*
-                 <input
-                    type="text"
-                    name="businessname"
-                    placeholder="Dawn's Donuts"
-                    required
-                /></label>
-                <label class="top"
+          <h3>Become a Member Today</h3>
+          <form method="get" action="confirm.html">
+            <fieldset>
+              <legend>Contact and Business Information (*Required)</legend>
+              <label class="top"
+                >First Name*
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="John"
+                  required
+              /></label>
+              <label class="top"
+                >Last Name*
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Smith"
+                  required
+              /></label>
+              <label class="top"
+                >Title<input type="text" name="title" placeholder="Manager"
+              /></label>
+              <label class="top"
+                >Email*<input
+                  type="email"
+                  name="email"
+                  placeholder="user@gmail.com"
+                  required
+              /></label>
+              <label class="top"
+                >Cell Phone<input
+                  type="tel"
+                  name="phone"
+                  placeholder="1235551234"
+              /></label>
+              <label class="top"
+                >Business Name*
+                <input
+                  type="text"
+                  name="businessname"
+                  placeholder="Dawn's Donuts"
+                  required
+              /></label>
+              <label class="top"
                 >Business Address
                 <input
                   type="text"
@@ -140,107 +142,132 @@
                   placeholder="245 North Main Street Mesa, AZ 85201"
               /></label>
               <label class="top"
-              >Business Website
-              <input
-                type="url"
-                name="businessWebsite"
-                placeholder="website.com"
-            /></label>
-            <label for="comments" class="top">Business Description</label>
-            <textarea class="top" id="comments" rows="5" cols="34" placeholder="Tell us about your business"></textarea>
+                >Business Website
+                <input
+                  type="url"
+                  name="businessWebsite"
+                  placeholder="website.com"
+              /></label>
+              <label for="comments" class="top">Business Description</label>
+              <textarea
+                class="top"
+                id="comments"
+                rows="5"
+                cols="40"
+                placeholder="Tell us about your business"
+              ></textarea>
 
-            <div class="memberLevel">
-                <p>Membership Level</p>
-            <label class="sbs"
-                    ><input type="radio" name="non-profit" value="non-profit" />Non-Profit ($100)</label
+              <div class="memberLevel">
+                <div class="levelRadio">
+                  <p>Membership Level</p>
+                  <label class="sbs"
+                    ><input
+                      type="radio"
+                      name="level"
+                      value="non-profit"
+                    />Non-Profit ($100)</label
                   >
                   <label class="sbs"
-                    ><input type="radio" name="bronze" value="bronze" />Bronze ($200)</label
+                    ><input type="radio" name="level" value="bronze" />Bronze
+                    ($200)</label
                   >
                   <label class="sbs"
-                    ><input type="radio" name="silver" value="silver" />Silver ($400)</label
+                    ><input type="radio" name="level" value="silver" />Silver
+                    ($400)</label
                   >
                   <label class="sbs"
-                  ><input type="radio" name="gold" value="gold" />Gold ($1000)</label
-                >
+                    ><input type="radio" name="level" value="gold" />Gold
+                    ($1000)</label
+                  >
+                </div>
                 <div class="levelKey">
-                    <p>Membership Key</p>
-                    <p>Non-Profit</p>
-                    <ul>
-                        <li>Directory listing on Chamber website</li>
-                        <li>Annual 501c3 training session</li>
-                        <li>Annual meet and greet with Chamber of Commerce Board member</li>
-                    </ul>
-                    <p>Bronze</p>
-                    <ul>
-                        <li>Directory listing on website and newsletter spotlight</li>
-                        <li>Annual meet and greet Chamber of Commerce Board</li>
-                        <li>Tickets to monthly Business Leaders of the Community luncheon</li>
-                    </ul>
-                    <p>Silver</p>
-                    <ul>
-                        <li>Directory listing and rotating business ad</li>
-                        <li>Tickets to Chamber of Commerce annual awards</li>
-                        <li>Semi-Annual meet and greet with Chamber of Commerce Board</li>
-                    </ul>
-                    <p>Gold</p>
-                    <ul>
-                        <li>Tickets to annual Mayor’s breakfast</li>
-                        <li>Monthly meeting with Chamber of Commerce Board</li>
-                        <li>Permanent Business Ad on Chamber of Commerce website</li>
-                        <li>Admission to annual Chamber Golf Tournament</li>
-                    </ul>
+                  <p>Membership Level Benefits</p>
+                  <p>Non-Profit ($100)</p>
+                  <ul>
+                    <li>Directory listing on Chamber website</li>
+                    <li>Annual 501c3 training session</li>
+                    <li>
+                      Annual meet and greet with Chamber of Commerce Board
+                      member
+                    </li>
+                  </ul>
+                  <p>Bronze ($200)</p>
+                  <ul>
+                    <li>
+                      Directory listing on website and newsletter spotlight
+                    </li>
+                    <li>Annual meet and greet Chamber of Commerce Board</li>
+                    <li>
+                      Tickets to monthly Business Leaders of the Community
+                      luncheon
+                    </li>
+                  </ul>
+                  <p>Silver ($400)</p>
+                  <ul>
+                    <li>Directory listing and rotating business ad</li>
+                    <li>Tickets to Chamber of Commerce annual awards</li>
+                    <li>
+                      Semi-Annual meet and greet with Chamber of Commerce Board
+                    </li>
+                  </ul>
+                  <p>Gold ($1000)</p>
+                  <ul>
+                    <li>Tickets to annual Mayor’s breakfast</li>
+                    <li>Monthly meeting with Chamber of Commerce Board</li>
+                    <li>
+                      Permanent Business Ad on Chamber of Commerce website
+                    </li>
+                    <li>Admission to annual Chamber Golf Tournament</li>
+                  </ul>
                 </div>
-                </div>
-    
-        
+              </div>
             </fieldset>
-                 
-                <input type="submit" value="Join Chamber" class="submitBtn" />
-              </form>
+
+            <input type="submit" value="Become a Member" class="submitBtn" />
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div class="contactinfo">
+          <div class="addresses">
+            <h4>Mesa Chamber of Commerce</h4>
+            <p>57 East 1st Street, Mesa, AZ 85201</p>
+            <p>480-555-3468</p>
+            <p>mesachamberofcommerce@azmail.com</p>
+          </div>
+          <div class="date-info">
+            <div class="socialMedia">
+              <img
+                src="images/facebook32.png"
+                alt="facebook icon"
+                loading="lazy"
+              />
+              <img
+                src="images/instagram32.png"
+                alt="instagram icon"
+                loading="lazy"
+              />
+              <img
+                src="images/twitter32.png"
+                alt="twitter icon"
+                loading="lazy"
+              />
             </div>
-        
-    
-</main>
+            <div class="buildInfo">
+              <p>
+                &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+                <a href="resources.html">Resources</a>
+              </p>
+            </div>
+            <div id="dateModified"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-<footer>
-  <div class="contactinfo">
-    <section class="addresses">
-      <h4>Mesa Chamber of Commerce</h4>
-      <p>57 East 1st Street, Mesa, AZ 85201</p>
-      <p>480-555-3468</p>
-      <p>mesachamberofcommerce@azmail.com</p>
-      <div class="socialMedia">
-        <img
-          src="images/facebook32.png"
-          alt="facebook icon"
-          loading="lazy"
-        />
-        <img
-          src="images/instagram32.png"
-          alt="instagram icon"
-          loading="lazy"
-        />
-        <img
-          src="images/twitter32.png"
-          alt="twitter icon"
-          loading="lazy"
-        />
-      </div>
-    </section>
-  </div>
-  <div class="date-info">
-    <p id="year">
-      &copy; <span id="demo"></span> | Shannon Payne | Arizona |
-      <a href="#" target="_blank">Resources</a>
-    </p>
-    <div id="dateModified"></div>
-  </div>
-</footer>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="js/webfontload.js"></script>
-<script src="js/date.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/date.js"></script>
+  </body>
 </html>

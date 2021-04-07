@@ -9,14 +9,14 @@
       content="Home page for the City of Mesa, Arizona Chamber of Commerce"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--<link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />-->
+    <link rel="stylesheet" href="css/large.css" />
   </head>
 
   <body>
-    <div id="content">
+    <div class="content">
       <!--<div id="announcement" class="hideannouncement">
         <p>
           Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
@@ -24,7 +24,7 @@
         </p>
       </div>-->
       <header>
-        <img
+        <img class="logo"
           src="images/chamberLogo200.png"
           alt="chamber of commerce website logo"
         />
@@ -32,8 +32,27 @@
           <h1>Mesa Chamber of Commerce</h1>
           <p>Connecting the Business Community</p>
         </section>
-        <div id="currentWeather"></div>
-        <div id="threeDayForecast"></div>
+        <section class="weather">
+          <div id="currentWeather">
+              <p>Mesa Weather</p>
+          </div>
+
+          <div id="threeDayForecast">
+            <table class="threeday">
+                <tr class="daysOfWeek">
+                  <th id="day0">Day1</th>
+                  <th id="day1">Day2</th>
+                  <th id="day2">Day3</th>
+                </tr>
+                <tr class="dailyHigh">
+                  <td id="temp0">&#8457;</td>
+                  <td id="temp1">&#8457;</td>
+                  <td id="temp2">&#8457;</td>
+                </tr>
+              </table>
+
+          </div>
+        </section>
       </header>
       <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
@@ -68,8 +87,9 @@
             />
           </picture>
         </div>
+        <div class="joinpurposebox">
         <div class="joinButton">
-          <a href="#"><button>Become a Member</button></a>
+          <a href="join.html"><button>Become a Member</button></a>
         </div>
         <div class="purpose">
           <h2>Purpose and Goals</h2>
@@ -81,6 +101,7 @@
             the Mesa business community as we progress towards the future.
           </p>
         </div>
+    </div>
         <div class="downtownImages">
           <img
             src="images/cityDirections300x400.jpg"
@@ -98,19 +119,21 @@
             loading="lazy"
           />
         </div>
+        <div class="eventTitle"><h3>April Chamber Events</h3></div>
         <section class="eventBusiness">
+            
           <div class="upcomingEvents">
-            <h3>Upcoming Chamber Events</h3>
+            
             <ul class="chamberDates">
-              <li>Tuesday, April 6</li>
-              <li>Wednesday, April 7</li>
-              <li>Friday, April 9</li>
-              <li>Tuesday, April 13</li>
-              <li>Thursday, April 15</li>
-              <li>Friday, April 16</li>
-              <li>Wednesday, April 21</li>
-              <li>Thursday, April 22</li>
-              <li>Tuesday, April 27</li>
+              <li>Tue. 6</li>
+              <li>Wed. 7</li>
+              <li>Fri. 9</li>
+              <li>Tue. 13</li>
+              <li>Thur. 15</li>
+              <li>Fri. 16</li>
+              <li>Wed. 21</li>
+              <li>Thur. 22</li>
+              <li>Tue. 27</li>
             </ul>
             <ul class="chamberEvents">
               <li>Zoom #MesaTakeOut Lunch Mob</li>
@@ -119,8 +142,7 @@
               <li>Virtual Non-Profit Vitality Council Meeting</li>
               <li>Virtual Mesa Chamber Member Orientation</li>
               <li>
-                Virtual Mesa Chamber Government Affairs Council with Senator
-                Sean Bowie
+                Virtual Mesa Chamber Government Affairs
               </li>
               <li>State of the City with Mayor John Giles</li>
               <li>Virtual Mesa Chamber Coffee Time</li>
@@ -129,17 +151,17 @@
           </div>
           <div class="businessAds">
             <h3>Shop Local</h3>
-            <img
+            <img class="ad"
               src="images/painterAd400x269.jpg"
               alt="ad for Marcel Painters business"
               loading="lazy"
             />
-            <img
+            <img class="ad"
               src="images/electricianAd400x234.jpg"
               alt="ad for Super Electric business"
               loading="lazy"
             />
-            <img
+            <img class="ad"
               src="images/carpetCleanAd400x258.jpg"
               alt="ad for Brimley ChemDry business"
               loading="lazy"
@@ -150,11 +172,13 @@
 
       <footer>
         <div class="contactinfo">
-          <section class="addresses">
+          <div class="addresses">
             <h4>Mesa Chamber of Commerce</h4>
             <p>57 East 1st Street, Mesa, AZ 85201</p>
             <p>480-555-3468</p>
             <p>mesachamberofcommerce@azmail.com</p>
+          </div>
+          <div class="date-info">
             <div class="socialMedia">
               <img
                 src="images/facebook32.png"
@@ -172,14 +196,15 @@
                 loading="lazy"
               />
             </div>
-          </section>
-        </div>
-        <div class="date-info">
-          <p id="year">
-            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
-            <a href="#" target="_blank">Resources</a>
-          </p>
-          <div id="dateModified"></div>
+            <div class="buildInfo">
+              <p>
+                &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+                <a href="resources.html">Resources</a>
+              </p>
+              <div id="dateModified"></div>
+            </div>
+            
+          </div>
         </div>
       </footer>
     </div>
@@ -187,5 +212,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

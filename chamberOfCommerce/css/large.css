@@ -1,0 +1,73 @@
+/*large screen*/
+@media only screen and (min-width: 48em) {
+  nav {
+    margin-bottom: 1.3rem;
+  }
+  .joinButton a {
+    margin-right: 4.8rem;
+  }
+  .joinButton {
+    margin-top: 5rem;
+  }
+  .purpose {
+    padding: 0.5rem 0;
+  }
+  .eventTitle h3 {
+    margin-left: 1rem;
+  }
+  .chamberDates {
+    font-size: 1rem;
+  }
+  .ad {
+    padding: 1rem;
+    margin: 0.7rem;
+  }
+  .businessAds img:nth-child(3) {
+    padding: 2.1rem 1rem;
+  }
+  .businessAds img:nth-child(4) {
+    padding: 1.3rem 1rem;
+  }
+  .mesaArticle {
+    padding-left: 0;
+  }
+  .mesaUpcomingEvents {
+    padding-left: 0;
+  }
+  .mesaUpcomingEvents h3 {
+    margin-top: 0;
+  }
+  .mesaAerial {
+    float: right;
+    padding: 0 0 0.5rem 0.8rem;
+  }
+  .historyImages {
+    display: flex;
+    justify-content: space-between;
+  }
+  .historyImages figure {
+    margin: 0.5rem 1rem;
+  }
+  .memberLevel {
+    display: flex;
+    margin-top: -1rem;
+  }
+  .levelKey {
+    padding-left: 3rem;
+    margin-top: 0;
+  }
+  .submitThanks {
+    padding: 3rem 0;
+}
+.mapBox {
+    
+}
+.map {
+    float: right;
+    margin-top: -9.2rem;
+    margin-right: 4.8rem;
+}
+.mapBoxAddress {
+   
+}
+}

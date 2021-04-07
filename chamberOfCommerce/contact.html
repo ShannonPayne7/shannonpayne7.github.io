@@ -9,14 +9,14 @@
       content="Contact Information and Form for Mesa Chamber of Commerce"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--<link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />-->
+    <link rel="stylesheet" href="css/large.css" />
   </head>
 
   <body>
-    <div id="content">
+    <div class="content">
       <!--<div id="announcement" class="hideannouncement">
         <p>
           Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
@@ -25,6 +25,7 @@
       </div>-->
       <header>
         <img
+          class="logo"
           src="images/chamberLogo200.png"
           alt="chamber of commerce website logo"
         />
@@ -47,7 +48,10 @@
       <main>
         <div class="hero">
           <picture>
-            <source media="(max-width:529px)" srcset="images/mesaCouncilChambers550x182" />
+            <source
+              media="(max-width:529px)"
+              srcset="images/mesaCouncilChambers550x182.jpg"
+            />
             <source
               media="(max-width:767px)"
               srcset="images/mesaCouncilChambers770x255.jpg"
@@ -64,67 +68,85 @@
           </picture>
         </div>
         <div class="contactUs">
-         <div class="mapBox">
-             <div class="mapBoxAddress">
-             <h2>Mesa Chamber of Commerce</h2>
-             <p>57 East 1st Street, Mesa, AZ 85201</p>
-             <p>480-555-3468</p>
-            <p>mesachamberofcommerce@azmail.com</p>
-        </div>
-        <div id="map"></div>
-        <div class="boardOfDirectors">
-            <h3>Board of Directors</h3>
-            <ul>
+          <div class="mapBox">
+            <div class="mapBoxAddress">
+              <h2>Mesa Chamber of Commerce</h2>
+              <p>57 East 1st Street, Mesa, AZ 85201</p>
+              <p>480-555-3468</p>
+              <p>mesachamberofcommerce@azmail.com</p>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.017890811917!2d-111.83576886766743!3d33.413394046743996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba7c2c0c592c1%3A0xd10fc215694e771b!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1617737884914!5m2!1sen!2sus"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          
+            <div class="boardOfDirectors">
+              <h3>Board of Directors</h3>
+              <ul>
                 <li>Joseph Hill</li>
                 <li>Rebecca Jones</li>
                 <li>Allison Gorka</li>
                 <li>Pete Hegglesworth</li>
                 <li>Ray Copple</li>
-            </ul>
-        </div>
-         </div>
-         <div class="contactFormBox">
-             <h2>Contact Us</h2>
-             <form class="contactForm" method="get" action="contactUsConfirm">
-                  <label class="top"
-                    >Name*
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="John Smith"
-                      required
-                      pattern="[a-zA-Z\s]"
-                      title="Use upper or lower case letters"
-                  /></label>
-                  <label class="top"
-                    >Email*<input
-                      type="email"
-                      name="email"
-                      placeholder="user@gmail.com"
-                      required
-                  /></label>
-                  <label class="top"
-                    >Phone*<input
-                      type="tel"
-                      name="phone"
-                      placeholder="1235551234"
-                      required
-                  /></label>
-                  <label for="comments" class="top">Message</label>
-                  <textarea class="top" id="comments" rows="5" cols="34"></textarea>
-                  <input type="submit" value="Send Message" class="submitBtn" />
-                </form>
-         </div>
+              </ul>
+            </div>
+          </div>
+          <div class="contactFormBox">
+            <form class="contactForm" method="get" action="contactConfirm.html">
+              <fieldset>
+                <legend>Contact Us (*Required)</legend>
+                <label class="top"
+                  >Name*
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Smith"
+                    required
+                /></label>
+                <label class="top"
+                  >Email*<input
+                    type="email"
+                    name="email"
+                    placeholder="user@gmail.com"
+                    required
+                /></label>
+                <label class="top"
+                  >Phone*<input
+                    type="tel"
+                    name="phone"
+                    placeholder="1235551234"
+                    required
+                /></label>
+                <label for="comments" class="top">Message</label>
+                <textarea
+                  class="top"
+                  id="comments"
+                  rows="5"
+                  cols="40"
+                  placeholder="What can we help you with?"
+                ></textarea>
+              </fieldset>
+              <input type="submit" value="Send Message" class="contactsubmitBtn" />
+            </form>
+          </div>
         </div>
       </main>
 
       <footer>
         <div class="contactinfo">
-          <section class="addresses">
+          <div class="addresses">
             <h4>Mesa Chamber of Commerce</h4>
             <p>57 East 1st Street, Mesa, AZ 85201</p>
             <p>480-555-3468</p>
             <p>mesachamberofcommerce@azmail.com</p>
+          </div>
+          <div class="date-info">
             <div class="socialMedia">
               <img
                 src="images/facebook32.png"
@@ -142,14 +164,14 @@
                 loading="lazy"
               />
             </div>
-          </section>
-        </div>
-        <div class="date-info">
-          <p id="year">
-            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
-            <a href="#" target="_blank">Resources</a>
-          </p>
-          <div id="dateModified"></div>
+            <div class="buildInfo">
+              <p>
+                &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+                <a href="resources.html">Resources</a>
+              </p>
+            </div>
+            <div id="dateModified"></div>
+          </div>
         </div>
       </footer>
     </div>

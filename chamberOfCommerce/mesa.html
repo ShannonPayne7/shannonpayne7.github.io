@@ -9,14 +9,14 @@
       content="History and Demographics for City of Mesa"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--<link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />-->
+    <link rel="stylesheet" href="css/large.css" />
   </head>
 
   <body>
-    <div id="content">
+    <div class="content">
       <!--<div id="announcement" class="hideannouncement">
         <p>
           Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
@@ -24,7 +24,7 @@
         </p>
       </div>-->
       <header>
-        <img
+        <img class="logo"
           src="images/chamberLogo200.png"
           alt="chamber of commerce website logo"
         />
@@ -166,7 +166,7 @@
             </figure>
         </div>
 
-        <section class="upcomingEvents">
+        <section class="mesaUpcomingEvents">
           <h3>Upcoming Events</h3>
           <ul>
             <li>April 3 - Dec. 31 Power Road Farmer's Market</li>
@@ -211,11 +211,13 @@
 
       <footer>
         <div class="contactinfo">
-          <section class="addresses">
+          <div class="addresses">
             <h4>Mesa Chamber of Commerce</h4>
             <p>57 East 1st Street, Mesa, AZ 85201</p>
             <p>480-555-3468</p>
             <p>mesachamberofcommerce@azmail.com</p>
+          </div>
+          <div class="date-info">
             <div class="socialMedia">
               <img
                 src="images/facebook32.png"
@@ -233,14 +235,14 @@
                 loading="lazy"
               />
             </div>
-          </section>
-        </div>
-        <div class="date-info">
-          <p id="year">
-            &copy; <span id="demo"></span> | Shannon Payne | Arizona |
-            <a href="#" target="_blank">Resources</a>
-          </p>
-          <div id="dateModified"></div>
+            <div class="buildInfo">
+              <p>
+                &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+                <a href="resources.html">Resources</a>
+              </p>
+            </div>
+            <div id="dateModified"></div>
+          </div>
         </div>
       </footer>
     </div>

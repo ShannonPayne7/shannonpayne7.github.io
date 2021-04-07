@@ -1,0 +1,282 @@
+/*font-family: 'Open Sans', Arial, sans-serif;
+font-family: 'Lato', Helvetica, sans-serif;
+sage: #c9cba3 rgb(201, 203, 163);
+peach: #ffe1a8 rgb(255, 225, 168);
+terracotta: #e26d5c rgb(226, 109, 92);
+catawba: #723d46 rgb(114, 61, 70);
+old burgundy: #472d30 rgb(71, 45, 48);*/
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.content {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.375rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+.logo {
+  margin-left: -1rem;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.weather {
+  grid-column: span 2;
+}
+.title {
+  color: #723d46;
+  margin: 5.2rem 0 0 -4.2rem;
+  padding-bottom: 0;
+}
+.title h1 {
+  font-size: 1.4rem;
+}
+.title p {
+  font-weight: 600;
+}
+nav {
+  text-align: center;
+  background-color: rgba(255, 225, 168, 0.3);
+}
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: #472d30;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  outline: none;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: #472d30;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav a:hover {
+  background-color: rgba(201, 203, 163, 0.3);
+}
+nav a:active {
+  color: #472d30;
+}
+.hide,
+.current {
+  color: #472d30;
+  font-weight: 900;
+}
+nav ul.hide {
+  display: none;
+}
+
+.hero picture,
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.joinButton {
+  margin: 2rem 1rem 0.8rem;
+}
+.joinButton a {
+  padding: 11px;
+  border: 2px solid #c9cba3;
+  background-color: #c9cba3;
+  border-radius: 3px;
+}
+.joinButton button {
+  font-weight: 700;
+  font-size: 19.2px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.purpose {
+  padding: 0.5rem 1rem;
+}
+.downtownImages {
+  text-align: center;
+}
+.downtownImages img {
+  margin-bottom: 0.7rem;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #989898;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px;
+  padding: 0.6rem;
+  background-color: rgba(255, 225, 168, 0.3);
+}
+.upcomingEvents {
+  display: flex;
+}
+.eventTitle h3 {
+  margin-left: 1rem;
+}
+.chamberDates,
+.chamberEvents li {
+  list-style-type: none;
+}
+.chamberDates {
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  padding: 0;
+  min-width: 50px;
+}
+.chamberDates li {
+  color: #723d46;
+  font-weight: 900;
+}
+.chamberEvents {
+  padding: 0;
+  margin: 0 1rem;
+}
+.businessAds {
+  text-align: center;
+}
+.businessAds h3 {
+  text-align: left;
+  margin-left: 1rem;
+}
+.ad {
+  border: 2px solid #989898;
+  box-shadow: 2px 2px 2px;
+  margin-bottom: 0.5rem;
+}
+footer {
+  background-color: rgba(255, 225, 168, 0.3);
+}
+.contactinfo {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+.contactinfo p {
+  margin: 0.3rem 0 0.3rem 0;
+}
+.addresses {
+  margin: -0.5rem 0 1.2rem 0;
+}
+.buildInfo {
+  margin: 1rem 0 1rem 0;
+}
+.buildInfo a {
+  color: #000000;
+}
+.buildInfo a:hover {
+  background-color: rgba(201, 203, 163, 0.3);
+}
+.mesaArticle {
+    padding-left: 1rem;
+}
+.mesaUpcomingEvents {
+    padding-left: 1rem;
+}
+.joinUs {
+    padding-left: 1rem;
+}
+.joinForm h3 {
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+form label.top, form div {
+    display: block;
+    padding: .8rem .3rem .7rem;
+    color: #723d46;
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  #comments {
+    border: solid 1px #723d46;
+    padding: .75rem;
+    margin: -.7rem 0.3rem 0;
+    background-color: rgba(201, 203, 163, 0.3);
+  }
+  form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1.5px #723d46;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(201, 203, 163, 0.3);
+  }
+  form fieldset {
+    margin: 1.5rem .5rem;
+    border: 2px solid #723d46;
+    padding: .5rem 2%;
+    background-color: white;
+  }
+  form legend {
+    color: #723d46;
+    margin: 0 1.2rem;
+    padding: 0 .5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: #723d46;
+  }
+  form label.sbs input {
+      margin-right: 1rem;
+  }
+  .memberLevel {
+      margin-top: -1rem;
+  }
+  .levelKey {
+      color: #000000;
+      font-weight: 400;
+      margin-top: -1.3rem;
+  }
+  .levelKey p:first-of-type {
+      font-weight: bold;
+  }
+  form input.submitBtn {
+    border: none;
+    background-color: rgba(201, 203, 163, 0.3);
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  .submitThanks {
+      padding: 3rem 1rem;
+  }
+  .contactUs {
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+  }
+  .contactsubmitBtn {
+    border: none;
+    background-color: rgba(201, 203, 163, 0.3);
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+.resources {
+    padding: 1rem 0 2rem 1rem;
+}

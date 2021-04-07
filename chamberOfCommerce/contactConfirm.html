@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us Page for Mesa Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Contact Information and Form for Mesa Chamber of Commerce"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <!--<div id="announcement" class="hideannouncement">
+        <p>
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </p>
+      </div>-->
+      <header>
+        <img
+          class="logo"
+          src="images/chamberLogo200.png"
+          alt="chamber of commerce website logo"
+        />
+        <section class="title">
+          <h1>Mesa Chamber of Commerce</h1>
+          <p>Connecting the Business Community</p>
+        </section>
+      </header>
+      <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mesa.html">City of Mesa</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a class="current" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="hero">
+          <picture>
+            <source
+              media="(max-width:529px)"
+              srcset="images/mesaCouncilChambers550x182.jpg"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="images/mesaCouncilChambers770x255.jpg"
+            />
+            <source
+              media="(min-width:801px)"
+              srcset="images/mesaCouncilChambers980x325.jpg"
+            />
+            <img
+              src="images/mesaCouncilChambers980x325.jpg"
+              alt="Mesa Chamber of Commerce building"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="submitThanks">
+            <h2>Your message has been sent</h2>
+            <p>
+              Thank you for your interest in the Mesa Chamber of Commerce. You will receive an email reply shortly.
+            </p>
+          </div>
+        </main>
+  
+        <footer>
+          <div class="contactinfo">
+            <div class="addresses">
+              <h4>Mesa Chamber of Commerce</h4>
+              <p>57 East 1st Street, Mesa, AZ 85201</p>
+              <p>480-555-3468</p>
+              <p>mesachamberofcommerce@azmail.com</p>
+            </div>
+            <div class="date-info">
+              <div class="socialMedia">
+                <img
+                  src="images/facebook32.png"
+                  alt="facebook icon"
+                  loading="lazy"
+                />
+                <img
+                  src="images/instagram32.png"
+                  alt="instagram icon"
+                  loading="lazy"
+                />
+                <img
+                  src="images/twitter32.png"
+                  alt="twitter icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="buildInfo">
+                <p>
+                  &copy; <span id="demo"></span> | Shannon Payne | Arizona |
+                  <a href="resources.html">Resources</a>
+                </p>
+              </div>
+              <div id="dateModified"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script>
+      <script src="js/date.js"></script>
+    </body>
+  </html>
+  
