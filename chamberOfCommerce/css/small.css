@@ -115,19 +115,21 @@ nav ul.hide {
   display: block;
 }
 .joinButton {
-  margin: 2rem 1rem 0.8rem;
-}
-.joinButton a {
   padding: 11px;
   border: 2px solid #c9cba3;
   background-color: #c9cba3;
   border-radius: 3px;
+  margin: 1rem 1rem -1rem 1rem;
+  width: 175px;
+  height: 25px;
 }
-.joinButton button {
+.joinButton a {
   font-weight: 700;
   font-size: 19.2px;
   background-color: transparent;
   border-color: transparent;
+  text-decoration: none;
+  color: #000000;
 }
 .purpose {
   padding: 0.5rem 1rem;

@@ -28,13 +28,6 @@
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
   }
-  .joinpurposebox {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .joinButton a {
-    margin-right: 4.8rem;
-  }
   .contactinfo {
     display: flex;
     justify-content: space-around;

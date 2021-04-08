@@ -9,11 +9,8 @@
   nav {
     margin-bottom: 1.3rem;
   }
-  .joinButton a {
-    margin-right: 4.8rem;
-  }
   .joinButton {
-    margin-top: 5rem;
+    margin-left: 0;
   }
   .purpose {
     padding: 0.5rem 0;
