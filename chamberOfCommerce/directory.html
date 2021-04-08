@@ -17,12 +17,6 @@
 
   <body>
     <div class="content">
-      <!--<div id="announcement" class="hideannouncement">
-        <p>
-          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
-          city park pavilion.
-        </p>
-      </div>-->
       <header>
         <img class="logo"
           src="images/chamberLogo200.png"
@@ -63,9 +57,15 @@
             />
           </picture>
         </div>
-        <div id="directoryCards">Cards
-         
+        <div class="directoryHeading">
+          <h2>Business Directory</h2>
+        <div class="directoryMenu">
+          <button onclick="toggleCards()"><img id="gridButton" src="https://img.icons8.com/metro/26/000000/list.png"/></button>
         </div>
+      </div>
+        <div id="directoryCards" class="change"> 
+        </div>
+      
       </main>
 
       <footer>
@@ -110,5 +110,6 @@
     <script src="js/webfontload.js"></script>
     <script src="js/date.js"></script>
     <script src="js/directory.js"></script>
+    <script src="js/toggleCards.js"></script>
   </body>
 </html>

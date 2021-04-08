@@ -1,43 +1,53 @@
 /*medium screen */
 @media only screen and (min-width: 33em) {
-
-    #menuButton {
-        display: none;
-      }
-      nav ul.hide {
-        display: flex;
-      }
-      nav ul {
-        display: flex;
-        max-width: 980px;
-        margin: 0 auto;
-      }
-      nav ul li {
-        flex: 1 1 100%;
-        white-space: nowrap;
-      }
-      nav ul a {
-        text-align: center;
-        padding-top: 0.625rem;
-        padding-bottom: 0.625rem;
-      }
-
-      .joinpurposebox {
-          display: flex;
-          flex-direction: row-reverse;
-      }
-      .joinButton a {
-        margin-right: 4.8rem;
-    }
-    .contactinfo {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 1rem;
-    }
-    .date-info {
-        margin-top: 1rem;
-    }
-
-
-    
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weather {
+    grid-column: span 1;
+    padding: 1.8rem 0 0 2.5rem;
+    margin: 0;
+  }
+  #menuButton {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    white-space: nowrap;
+  }
+  nav ul a {
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .joinpurposebox {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .joinButton a {
+    margin-right: 4.8rem;
+  }
+  .contactinfo {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+  .date-info {
+    margin-top: 1rem;
+  }
+  .addresses {
+    margin-top: -0.5rem;
+  }
+  div.change {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

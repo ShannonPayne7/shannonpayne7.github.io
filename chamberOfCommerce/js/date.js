@@ -8,11 +8,6 @@ let myDate = new Date();
 let currentYear = myDate.getFullYear();
 document.getElementById("demo").innerHTML = currentYear;
 
-//show pancake announcement
-if (weekDay == days[5]) {
-   document.getElementById("announcement").className = "showAnnouncement";
-}
-
 //toggle menu button
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");

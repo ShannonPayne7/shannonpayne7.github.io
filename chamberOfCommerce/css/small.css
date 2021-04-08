@@ -6,7 +6,8 @@ terracotta: #e26d5c rgb(226, 109, 92);
 catawba: #723d46 rgb(114, 61, 70);
 old burgundy: #472d30 rgb(71, 45, 48);*/
 
-main {
+main,
+header {
   max-width: 980px;
   margin: 0 auto;
 }
@@ -29,6 +30,29 @@ header {
 }
 .weather {
   grid-column: span 2;
+  padding: 0 0 1rem 1.6rem;
+  line-height: 0.5rem;
+  margin: -1.5rem -0.5rem 1rem 0;
+  background-color: rgba(201, 203, 163, 0.3);
+}
+#currentWeather p:first-of-type {
+  font-weight: bold;
+}
+#threeDayForecast {
+  line-height: 1rem;
+  margin-left: -0.3rem;
+}
+.threeday td {
+  padding-right: 0.5rem;
+}
+.hideannouncement {
+  display: none;
+}
+.showAnnouncement {
+  background-color: rgba(201, 203, 163, 0.3);
+  font-size: 1.2rem;
+  padding: 1px;
+  text-align: center;
 }
 .title {
   color: #723d46;
@@ -84,7 +108,6 @@ nav a:active {
 nav ul.hide {
   display: none;
 }
-
 .hero picture,
 .hero img {
   max-width: 100%;
@@ -163,13 +186,13 @@ footer {
 }
 .contactinfo {
   margin-top: 0.5rem;
-  padding: 0 1rem;
+  padding: 0.7rem 1rem;
 }
 .contactinfo p {
   margin: 0.3rem 0 0.3rem 0;
 }
 .addresses {
-  margin: -0.5rem 0 1.2rem 0;
+  margin: 1rem 0 1.2rem 0;
 }
 .buildInfo {
   margin: 1rem 0 1rem 0;
@@ -181,102 +204,142 @@ footer {
   background-color: rgba(201, 203, 163, 0.3);
 }
 .mesaArticle {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 .mesaUpcomingEvents {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 .joinUs {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 .joinForm h3 {
-    padding-left: 1rem;
-    margin-top: 2rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
 }
-form label.top, form div {
-    display: block;
-    padding: .8rem .3rem .7rem;
-    color: #723d46;
-    font-size: .9rem;
-    font-weight: 600;
-  }
-  #comments {
-    border: solid 1px #723d46;
-    padding: .75rem;
-    margin: -.7rem 0.3rem 0;
-    background-color: rgba(201, 203, 163, 0.3);
-  }
-  form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1.5px #723d46;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(201, 203, 163, 0.3);
-  }
-  form fieldset {
-    margin: 1.5rem .5rem;
-    border: 2px solid #723d46;
-    padding: .5rem 2%;
-    background-color: white;
-  }
-  form legend {
-    color: #723d46;
-    margin: 0 1.2rem;
-    padding: 0 .5rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-  form label.sbs {
-    display: block;
-    padding: .5rem 0;
-    color: #723d46;
-  }
-  form label.sbs input {
-      margin-right: 1rem;
-  }
-  .memberLevel {
-      margin-top: -1rem;
-  }
-  .levelKey {
-      color: #000000;
-      font-weight: 400;
-      margin-top: -1.3rem;
-  }
-  .levelKey p:first-of-type {
-      font-weight: bold;
-  }
-  form input.submitBtn {
-    border: none;
-    background-color: rgba(201, 203, 163, 0.3);
-    border-radius: .5rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.3rem;
-  }
-  .submitThanks {
-      padding: 3rem 1rem;
-  }
-  .contactUs {
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-  }
-  .contactsubmitBtn {
-    border: none;
-    background-color: rgba(201, 203, 163, 0.3);
-    border-radius: .5rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.3rem;
-  }
+form label.top,
+form div {
+  display: block;
+  padding: 0.8rem 0.3rem 0.7rem;
+  color: #723d46;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+#comments {
+  border: solid 1px #723d46;
+  padding: 0.75rem;
+  margin: -0.7rem 0.3rem 0;
+  background-color: rgba(201, 203, 163, 0.3);
+}
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1.5px #723d46;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(201, 203, 163, 0.3);
+}
+form fieldset {
+  margin: 1.5rem 0.5rem;
+  border: 2px solid #723d46;
+  padding: 0.5rem 2%;
+  background-color: white;
+}
+form legend {
+  color: #723d46;
+  margin: 0 1.2rem;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+form label.sbs {
+  display: block;
+  padding: 0.5rem 0;
+  color: #723d46;
+}
+form label.sbs input {
+  margin-right: 1rem;
+}
+.memberLevel {
+  margin-top: -1rem;
+}
+.levelKey {
+  color: #000000;
+  font-weight: 400;
+  margin-top: -1.3rem;
+}
+.levelKey p:first-of-type {
+  font-weight: bold;
+}
+form input.submitBtn {
+  border: none;
+  background-color: rgba(201, 203, 163, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+.submitThanks {
+  padding: 3rem 1rem;
+}
+.contactUs {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.contactsubmitBtn {
+  border: none;
+  background-color: rgba(201, 203, 163, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.3rem;
+}
 .resources {
-    padding: 1rem 0 2rem 1rem;
+  padding: 1rem 0 2rem 1rem;
+}
+.directoryHeading {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+.directoryMenu button {
+  background-color: rgba(255, 225, 168, 0.3);
+}
+.directoryMenu {
+  padding: 1rem;
+}
+#directoryCards {
+  padding: 0.5rem 0;
+}
+#directoryCards section {
+  width: 18rem;
+  height: 25rem;
+  border: 2px solid #707070;
+  box-shadow: 1px 1px 4px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#directoryCards img {
+  padding: 0.2rem;
+  border: 1px solid #989898;
+  box-shadow: 1px 1px 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+}
+#directoryCards p,
+#directoryCards h2 {
+  margin: 0.5rem 0;
+  padding: 0 1rem;
 }
